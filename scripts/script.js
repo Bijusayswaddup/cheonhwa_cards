@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const results = data.beasts.filter(beast => {
             const matchesSearch = beast.name.toLowerCase().includes(searchTerm) ||
-                                  beast.description.toLowerCase().includes(searchTerm);
+                beast.description.toLowerCase().includes(searchTerm);
             const matchesContinent = continent ? beast.continentId === continent : true;
             return matchesSearch && matchesContinent;
         });
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 e.stopPropagation();
                 popup.classList.remove('active');
             });
-            
+
             // Close on background click
             popup.addEventListener('click', (e) => {
                 if (e.target === popup) {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Populate Filters
     function populateFilters(continents) {
         const filter = document.getElementById('continent-filter');
-        filter.innerHTML = '<option value="">All Continents</option>' + 
+        filter.innerHTML = '<option value="">All Continents</option>' +
             continents.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
     }
 
@@ -195,4 +195,77 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
         document.body.prepend(errorDiv);
     }
+
+    // Audio file paths (add your own paths)
+    const audioFiles = [
+        'audio/TheElements_KahaPugeyMa.mp3',
+        'audio/ekaadeshmaa.mp3',
+        'audio/bekcha_ghamjoon.mp3'
+    ];
+
+    // Audio configuration
+    const FADE_DURATION = 500; // 2 seconds
+    const PLAY_DURATION = 60000; // 60 seconds total
+    const MAX_VOLUME = 0.3; // 30% volume
+
+    let currentAudio = null;
+    let currentFadeInterval = null;
+
+    // Randomly select next track
+    function getRandomTrack() {
+        return new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)]);
+    }
+
+    function fadeAudio(audio, targetVolume, duration, onComplete) {
+        const initialVolume = audio.volume;
+        const volumeChange = targetVolume - initialVolume;
+        const startTime = Date.now();
+
+        function updateVolume() {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            audio.volume = initialVolume + (volumeChange * progress);
+
+            if (progress < 1) {
+                currentFadeInterval = requestAnimationFrame(updateVolume);
+            } else {
+                audio.volume = targetVolume; // Ensure exact target
+                if (onComplete) onComplete();
+            }
+        }
+
+        currentFadeInterval = requestAnimationFrame(updateVolume);
+    }
+
+    function playNextTrack() {
+        // Cleanup previous audio
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            cancelAnimationFrame(currentFadeInterval);
+        }
+
+        // Create new audio element
+        currentAudio = getRandomTrack();
+        currentAudio.volume = 0;
+        currentAudio.play()
+            .then(() => {
+                // Fade in
+                fadeAudio(currentAudio, MAX_VOLUME, FADE_DURATION, () => {
+                    // Schedule fade out
+                    setTimeout(() => {
+                        fadeAudio(currentAudio, 0, FADE_DURATION, () => {
+                            currentAudio.pause();
+                            currentAudio.currentTime = 0;
+                            // Restart cycle
+                            playNextTrack();
+                        });
+                    }, PLAY_DURATION - FADE_DURATION * 2);
+                });
+            })
+            .catch(error => console.error('Audio play failed:', error));
+    }
+
+    // Start the sequence
+    playNextTrack();
 });
