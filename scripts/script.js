@@ -196,113 +196,120 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.body.prepend(errorDiv);
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // Audio configuration
-        const audioFiles = [
-            'audio/TheElements_KahaPugeyMa.mp3',
-            'audio/ekaadeshmaa.mp3',
-            'audio/bekcha_ghamjoon.mp3'
-        ];
-        const FADE_DURATION = 2000;    // 2-second fade in/out
-        const PLAY_DURATION = 60000;   // 60-second total cycle
-        const MAX_VOLUME = 0.3;        // 30% volume
-    
-        // System state
-        let currentAudio = null;
-        let currentFadeInterval = null;
-        let audioStarted = false;
-        let isMusicPlaying = false;
-    
-        // Create music overlay dynamically
-        const musicOverlay = document.createElement('div');
-        musicOverlay.id = 'music-overlay';
-        musicOverlay.innerHTML = `
-            <button id="start-music">▶ Start the Codex Ambience</button>
-        `;
-        document.body.prepend(musicOverlay);
-    
-        // Audio control functions
-        const getRandomTrack = () => {
-            const track = new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)]);
-            track.crossOrigin = 'anonymous'; // For CORS if needed
-            return track;
-        };
-    
-        const fadeAudio = (audio, targetVolume, duration, onComplete) => {
-            const startVolume = audio.volume;
-            const deltaVolume = targetVolume - startVolume;
-            const startTime = Date.now();
-    
-            const updateVolume = () => {
-                const elapsed = Date.now() - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                audio.volume = startVolume + (deltaVolume * progress);
-    
-                if (progress < 1) {
-                    currentFadeInterval = requestAnimationFrame(updateVolume);
-                } else {
-                    audio.volume = targetVolume;
-                    onComplete?.();
-                }
-            };
-    
-            currentFadeInterval = requestAnimationFrame(updateVolume);
-        };
-    
-        const playNextTrack = () => {
-            if (!isMusicPlaying) return;
-    
-            // Cleanup previous track
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0;
-                cancelAnimationFrame(currentFadeInterval);
-            }
-    
-            // Initialize new track
-            currentAudio = getRandomTrack();
-            currentAudio.volume = 0;
-    
-            currentAudio.play()
-                .then(() => {
-                    // Fade in
-                    fadeAudio(currentAudio, MAX_VOLUME, FADE_DURATION, () => {
-                        // Schedule fade out
-                        setTimeout(() => {
-                            fadeAudio(currentAudio, 0, FADE_DURATION, () => {
-                                // Restart cycle
-                                currentAudio.pause();
-                                currentAudio.currentTime = 0;
-                                playNextTrack();
-                            });
-                        }, PLAY_DURATION - (FADE_DURATION * 2));
-                    });
-                })
-                .catch(error => console.error('Audio playback error:', error));
-        };
-    
-        // Event handlers
-        const initializeAudioSystem = () => {
-            if (!audioStarted) {
-                audioStarted = true;
-                isMusicPlaying = true;
-                musicOverlay.style.display = 'none';
-                playNextTrack();
-            }
-        };
-    
-        // Start music on button click
-        document.getElementById('start-music').addEventListener('click', initializeAudioSystem);
-    
-        // Pause/play on window visibility change
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                isMusicPlaying = false;
-                currentAudio?.pause();
-            } else if (audioStarted) {
-                isMusicPlaying = true;
-                playNextTrack();
-            }
-        });
+// =====================
+    // Audio System
+    // =====================
+    const audioFiles = [
+        'audio/TheElements_KahaPugeyMa.mp3',
+        'audio/ekaadeshmaa.mp3',
+        'audio/bekcha_ghamjoon.mp3'
+    ];
+
+    const FADE_DURATION = 2000;
+    const PLAY_DURATION = 15000;
+    const MAX_VOLUME = 0.3;
+
+    let audioContext;
+    let currentAudio;
+    let gainNode;
+    let isPlaying = false;
+    let audioInitialized = false;
+
+    // Create overlay
+    const musicOverlay = document.createElement('div');
+    musicOverlay.id = 'music-overlay';
+    musicOverlay.innerHTML = `
+        <button id="start-music">▶ Begin the Codex Journey</button>
+        <p class="mobile-warning">Tap to start audio experience</p>
+    `;
+    document.body.prepend(musicOverlay);
+
+    // Mobile audio initialization
+    const initAudioSystem = async () => {
+        if (audioInitialized) return;
+        
+        try {
+            // Create audio context
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            gainNode = audioContext.createGain();
+            gainNode.connect(audioContext.destination);
+            
+            // iOS requires silent play first
+            const buffer = audioContext.createBuffer(1, 1, 22050);
+            const source = audioContext.createBufferSource();
+            source.buffer = buffer;
+            source.connect(audioContext.destination);
+            source.start(0);
+            
+            // Hide overlay
+            musicOverlay.style.display = 'none';
+            audioInitialized = true;
+            isPlaying = true;
+            
+            // Start playback
+            playNextTrack();
+        } catch (error) {
+            console.error('Audio initialization failed:', error);
+        }
+    };
+
+    // Audio playback logic
+    const playNextTrack = async () => {
+        if (!isPlaying) return;
+
+        // Cleanup previous track
+        if (currentAudio) {
+            currentAudio.disconnect();
+        }
+
+        // Load new track
+        const track = audioFiles[Math.floor(Math.random() * audioFiles.length)];
+        const response = await fetch(track);
+        const arrayBuffer = await response.arrayBuffer();
+        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+        
+        currentAudio = audioContext.createBufferSource();
+        currentAudio.buffer = audioBuffer;
+        currentAudio.connect(gainNode);
+        
+        // Set initial volume
+        gainNode.gain.setValueAtTime(0, audioContext.currentTime);
+        
+        // Fade in
+        gainNode.gain.linearRampToValueAtTime(
+            MAX_VOLUME,
+            audioContext.currentTime + FADE_DURATION / 1000
+        );
+        
+        currentAudio.start(0);
+        
+        // Schedule fade out
+        setTimeout(() => {
+            gainNode.gain.linearRampToValueAtTime(
+                0,
+                audioContext.currentTime + FADE_DURATION / 1000
+            );
+            
+            // Restart after fadeout
+            setTimeout(() => {
+                if (isPlaying) playNextTrack();
+            }, FADE_DURATION);
+        }, PLAY_DURATION - FADE_DURATION * 2);
+    };
+
+    // Event listeners
+    document.getElementById('start-music').addEventListener('click', initAudioSystem);
+    document.addEventListener('touchstart', initAudioSystem, { once: true });
+
+    // Pause when tab hidden
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            isPlaying = false;
+            gainNode?.gain.setValueAtTime(0, audioContext.currentTime);
+        } else if (audioInitialized) {
+            isPlaying = true;
+            playNextTrack();
+        }
     });
+
 });
