@@ -196,58 +196,64 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.body.prepend(errorDiv);
     }
 
-    // Audio file paths (add your own paths)
+    // Audio configuration
     const audioFiles = [
         'audio/TheElements_KahaPugeyMa.mp3',
         'audio/ekaadeshmaa.mp3',
         'audio/bekcha_ghamjoon.mp3'
     ];
+    const FADE_DURATION = 2000;    // 2-second fade in/out
+    const PLAY_DURATION = 15000;   // 15-second total cycle
+    const MAX_VOLUME = 0.3;        // 30% volume
 
-    // Audio configuration
-    const FADE_DURATION = 500; // 2 seconds
-    const PLAY_DURATION = 60000; // 60 seconds total
-    const MAX_VOLUME = 0.3; // 30% volume
-
+    // System state
     let currentAudio = null;
     let currentFadeInterval = null;
+    let audioStarted = false;
+    let isMusicPlaying = false;
 
-    // Randomly select next track
-    function getRandomTrack() {
-        return new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)]);
-    }
+    // DOM elements
+    const musicOverlay = document.getElementById('music-overlay');
+    const startButton = document.getElementById('start-music');
 
-    function fadeAudio(audio, targetVolume, duration, onComplete) {
-        const initialVolume = audio.volume;
-        const volumeChange = targetVolume - initialVolume;
+    // Audio control functions
+    const getRandomTrack = () => new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)]);
+
+    const fadeAudio = (audio, targetVolume, duration, onComplete) => {
+        const startVolume = audio.volume;
+        const deltaVolume = targetVolume - startVolume;
         const startTime = Date.now();
 
-        function updateVolume() {
+        const updateVolume = () => {
             const elapsed = Date.now() - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            audio.volume = initialVolume + (volumeChange * progress);
+            audio.volume = startVolume + (deltaVolume * progress);
 
             if (progress < 1) {
                 currentFadeInterval = requestAnimationFrame(updateVolume);
             } else {
-                audio.volume = targetVolume; // Ensure exact target
-                if (onComplete) onComplete();
+                audio.volume = targetVolume;
+                onComplete?.();
             }
-        }
+        };
 
         currentFadeInterval = requestAnimationFrame(updateVolume);
-    }
+    };
 
-    function playNextTrack() {
-        // Cleanup previous audio
+    const playNextTrack = () => {
+        if (!isMusicPlaying) return;
+
+        // Cleanup previous track
         if (currentAudio) {
             currentAudio.pause();
             currentAudio.currentTime = 0;
             cancelAnimationFrame(currentFadeInterval);
         }
 
-        // Create new audio element
+        // Initialize new track
         currentAudio = getRandomTrack();
         currentAudio.volume = 0;
+
         currentAudio.play()
             .then(() => {
                 // Fade in
@@ -255,17 +261,38 @@ document.addEventListener('DOMContentLoaded', async () => {
                     // Schedule fade out
                     setTimeout(() => {
                         fadeAudio(currentAudio, 0, FADE_DURATION, () => {
+                            // Restart cycle
                             currentAudio.pause();
                             currentAudio.currentTime = 0;
-                            // Restart cycle
                             playNextTrack();
                         });
-                    }, PLAY_DURATION - FADE_DURATION * 2);
+                    }, PLAY_DURATION - (FADE_DURATION * 2));
                 });
             })
-            .catch(error => console.error('Audio play failed:', error));
-    }
+            .catch(error => console.error('Audio playback error:', error));
+    };
 
-    // Start the sequence
-    playNextTrack();
+    // Event handlers
+    const initializeAudioSystem = () => {
+        if (!audioStarted) {
+            audioStarted = true;
+            isMusicPlaying = true;
+            musicOverlay.style.display = 'none';
+            playNextTrack();
+        }
+    };
+
+    // Start music on button click
+    startButton.addEventListener('click', initializeAudioSystem);
+
+    // Optional: Pause/play on window visibility change
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            isMusicPlaying = false;
+            currentAudio?.pause();
+        } else if (audioStarted) {
+            isMusicPlaying = true;
+            playNextTrack();
+        }
+    });
 });
