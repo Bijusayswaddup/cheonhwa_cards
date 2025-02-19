@@ -196,120 +196,76 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.body.prepend(errorDiv);
     }
 
-// =====================
-    // Audio System
-    // =====================
+    // Audio file paths (add your own paths)
     const audioFiles = [
         'audio/TheElements_KahaPugeyMa.mp3',
         'audio/ekaadeshmaa.mp3',
         'audio/bekcha_ghamjoon.mp3'
     ];
 
-    const FADE_DURATION = 2000;
-    const PLAY_DURATION = 15000;
-    const MAX_VOLUME = 0.3;
+    // Audio configuration
+    const FADE_DURATION = 500; // 2 seconds
+    const PLAY_DURATION = 60000; // 60 seconds total
+    const MAX_VOLUME = 0.3; // 30% volume
 
-    let audioContext;
-    let currentAudio;
-    let gainNode;
-    let isPlaying = false;
-    let audioInitialized = false;
+    let currentAudio = null;
+    let currentFadeInterval = null;
 
-    // Create overlay
-    const musicOverlay = document.createElement('div');
-    musicOverlay.id = 'music-overlay';
-    musicOverlay.innerHTML = `
-        <button id="start-music">▶ Begin the Codex Journey</button>
-        <p class="mobile-warning">Tap to start audio experience</p>
-    `;
-    document.body.prepend(musicOverlay);
+    // Randomly select next track
+    function getRandomTrack() {
+        return new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)]);
+    }
 
-    // Mobile audio initialization
-    const initAudioSystem = async () => {
-        if (audioInitialized) return;
-        
-        try {
-            // Create audio context
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            gainNode = audioContext.createGain();
-            gainNode.connect(audioContext.destination);
-            
-            // iOS requires silent play first
-            const buffer = audioContext.createBuffer(1, 1, 22050);
-            const source = audioContext.createBufferSource();
-            source.buffer = buffer;
-            source.connect(audioContext.destination);
-            source.start(0);
-            
-            // Hide overlay
-            musicOverlay.style.display = 'none';
-            audioInitialized = true;
-            isPlaying = true;
-            
-            // Start playback
-            playNextTrack();
-        } catch (error) {
-            console.error('Audio initialization failed:', error);
+    function fadeAudio(audio, targetVolume, duration, onComplete) {
+        const initialVolume = audio.volume;
+        const volumeChange = targetVolume - initialVolume;
+        const startTime = Date.now();
+
+        function updateVolume() {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            audio.volume = initialVolume + (volumeChange * progress);
+
+            if (progress < 1) {
+                currentFadeInterval = requestAnimationFrame(updateVolume);
+            } else {
+                audio.volume = targetVolume; // Ensure exact target
+                if (onComplete) onComplete();
+            }
         }
-    };
 
-    // Audio playback logic
-    const playNextTrack = async () => {
-        if (!isPlaying) return;
+        currentFadeInterval = requestAnimationFrame(updateVolume);
+    }
 
-        // Cleanup previous track
+    function playNextTrack() {
+        // Cleanup previous audio
         if (currentAudio) {
-            currentAudio.disconnect();
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            cancelAnimationFrame(currentFadeInterval);
         }
 
-        // Load new track
-        const track = audioFiles[Math.floor(Math.random() * audioFiles.length)];
-        const response = await fetch(track);
-        const arrayBuffer = await response.arrayBuffer();
-        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-        
-        currentAudio = audioContext.createBufferSource();
-        currentAudio.buffer = audioBuffer;
-        currentAudio.connect(gainNode);
-        
-        // Set initial volume
-        gainNode.gain.setValueAtTime(0, audioContext.currentTime);
-        
-        // Fade in
-        gainNode.gain.linearRampToValueAtTime(
-            MAX_VOLUME,
-            audioContext.currentTime + FADE_DURATION / 1000
-        );
-        
-        currentAudio.start(0);
-        
-        // Schedule fade out
-        setTimeout(() => {
-            gainNode.gain.linearRampToValueAtTime(
-                0,
-                audioContext.currentTime + FADE_DURATION / 1000
-            );
-            
-            // Restart after fadeout
-            setTimeout(() => {
-                if (isPlaying) playNextTrack();
-            }, FADE_DURATION);
-        }, PLAY_DURATION - FADE_DURATION * 2);
-    };
+        // Create new audio element
+        currentAudio = getRandomTrack();
+        currentAudio.volume = 0;
+        currentAudio.play()
+            .then(() => {
+                // Fade in
+                fadeAudio(currentAudio, MAX_VOLUME, FADE_DURATION, () => {
+                    // Schedule fade out
+                    setTimeout(() => {
+                        fadeAudio(currentAudio, 0, FADE_DURATION, () => {
+                            currentAudio.pause();
+                            currentAudio.currentTime = 0;
+                            // Restart cycle
+                            playNextTrack();
+                        });
+                    }, PLAY_DURATION - FADE_DURATION * 2);
+                });
+            })
+            .catch(error => console.error('Audio play failed:', error));
+    }
 
-    // Event listeners
-    document.getElementById('start-music').addEventListener('click', initAudioSystem);
-    document.addEventListener('touchstart', initAudioSystem, { once: true });
-
-    // Pause when tab hidden
-    document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-            isPlaying = false;
-            gainNode?.gain.setValueAtTime(0, audioContext.currentTime);
-        } else if (audioInitialized) {
-            isPlaying = true;
-            playNextTrack();
-        }
-    });
-
+    // Start the sequence
+    playNextTrack();
 });
