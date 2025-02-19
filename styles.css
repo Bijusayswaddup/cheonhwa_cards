@@ -447,25 +447,29 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
 }
 
 #start-music {
     padding: 15px 30px;
     font-size: 1.2em;
     background: #2c3e50;
-    color: white;
+    color: #ecf0f1;
     border: 2px solid #3498db;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
 }
 
 #start-music:hover {
     background: #3498db;
     transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(52, 152, 219, 0.8);
 }
