@@ -198,9 +198,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Audio file paths (add your own paths)
     const audioFiles = [
-        'audio/TheElements_KahaPugeyMa.mp3',
-        'audio/ekaadeshmaa.mp3',
-        'audio/bekcha_ghamjoon.mp3'
+        'audio/themesong-1.mp3',
+        'audio/themesong-2.mp3'
     ];
 
     // Audio configuration
