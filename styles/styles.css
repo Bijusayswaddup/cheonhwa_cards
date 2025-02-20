@@ -453,3 +453,19 @@ h1 {
 .close-btn:hover {
     color: #ff6b6b;
 }
+
+@media screen and (max-width: 480px){
+    .search-section{
+        display: block;
+    }
+
+    .search-bar{
+        width: 250px;
+
+        margin-bottom: 20px;
+    }
+
+    .filter-dropdown{
+        width: 300px;
+    }
+}
