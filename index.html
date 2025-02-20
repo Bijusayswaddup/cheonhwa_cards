@@ -2,24 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Cheonhae Codex</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheonhwa Realm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Cheonhae Codex</h1>
-            <div class="search-section">
-                <input type="text" id="search" placeholder="Search beasts..." class="search-bar">
-                <select id="continent-filter" class="filter-dropdown">
-                    <option value="">All Continents</option>
-                </select>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Cheonhwa</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="/Cheonhae_Codex/index.html">Codex</a></li>
+                <li><a href="#gods">Gods</a></li>
+                <li><a href="#continents">Continents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
-        </header>
-        <main class="card-grid" id="card-container"></main>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Cheonhwa</h1>
+            <p>Ancient wisdom meets celestial power</p>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/1200x400?mountain" alt="Sacred Peaks">
+                <div class="slide-content">
+                    <h3>Sacred Peaks</h3>
+                    <p>Abode of the Mountain Deities</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/1200x400?temple" alt="Ancient Temples">
+                <div class="slide-content">
+                    <h3>Celestial Temples</h3>
+                    <p>Sanctuaries of Eternal Wisdom</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/1200x400?forest" alt="Enchanted Forests">
+                <div class="slide-content">
+                    <h3>Mystic Forests</h3>
+                    <p>Realms of Ancient Spirits</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-indicators" id="indicators"></div>
     </div>
-    <script src="scripts/script.js"></script>
+
+    <!-- Content Sections -->
+    <section class="content-section" id="codex">
+        <h2>Cheonhwa Codex</h2>
+        <div class="content-grid">
+            <div class="content-card">
+                <h3>Ancient Texts</h3>
+                <p>Decipher the wisdom of celestial scriptures</p>
+            </div>
+            <div class="content-card">
+                <h3>Divine Laws</h3>
+                <p>Understand the cosmic order of Cheonhwa</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cheonhwa Realm. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

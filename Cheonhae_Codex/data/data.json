@@ -1,0 +1,3717 @@
+{
+  "continents": [
+    {
+      "id": "hwayang",
+      "name": "Hwayang",
+      "type": "Volcanic Hellscape",
+      "description": "A realm where the earth's crust bleeds molten fury. Dominated by the Eternal Pyre - a volcano that has burned since creation.",
+      "colorTheme": "#FF4500",
+      "bannerImage": "images/continents/hwayang-banner.jpg"
+    },
+    {
+      "id": "wolhwa",
+      "name": "Wolhwa",
+      "type": "Lunar Sanctum",
+      "description": "A realm of eternal twilight where moonlight solidifies into silvered forests and liquid starlight flows through crystalline rivers.",
+      "colorTheme": "#7EC8E3",
+      "bannerImage": "images/continents/wolhwa-banner.jpg"
+    },
+    {
+      "id": "cheolgeom",
+      "name": "Cheolgeom",
+      "type": "Iron Continent",
+      "description": "Metallic steppes with ironwood forests, jagged canyon mines, and fortress-cities built into cliffs. Magnetic storms pull metal objects skyward; rivers run with liquid mercury.",
+      "colorTheme": "#A9A9A9",
+      "bannerImage": "images/continents/cheolgeom-banner.jpg"
+    },
+    {
+      "id": "chunmok",
+      "name": "Chunmok",
+      "type": "Celestial Forest Continent",
+      "description": "Bioluminescent forests with sentient trees, floating lotus lakes, and valleys shrouded in venomous mist. Floating islands suspended by ancient magic and sacred groves guarded by druids.",
+      "colorTheme": "#228B22",
+      "bannerImage": "images/continents/chunmok-banner.jpg"
+    },
+    {
+      "id": "binghe",
+      "name": "Binghe",
+      "type": "Glacier Continent",
+      "description": "Vast frozen tundras lit by shimmering auroras, labyrinthine ice caverns, and fields of singing iceflowers. Glacial rivers flow with liquid ice, and Aurora Peaks harness northern lights for magic.",
+      "colorTheme": "#87CEEB",
+      "bannerImage": "images/continents/binghe-banner.jpg"
+    },
+    {
+      "id": "amgwang",
+      "name": "Amgwang",
+      "type": "Cursed Continent",
+      "description": "Desolate wastelands with bloodstone spires, bone-choked rivers, and crumbling ghost cities haunted by spirits. Shroud Mists induce hallucinations, and Necrotic Pits fuel undead armies.",
+      "colorTheme": "#2E0854",
+      "bannerImage": "images/continents/amgwang-banner.jpg"
+    },
+    {
+      "id": "bungu",
+      "name": "Bungu",
+      "type": "Sky Continent",
+      "description": "Floating islands suspended by levitation stones, connected by fragile crystal bridges. Stormy skies crackle with lightning, and tornadoes spiral between islands. Home to eternal storms and skywhales.",
+      "colorTheme": "#4682B4",
+      "bannerImage": "images/continents/bungu-banner.jpg"
+    },
+    {
+      "id": "nongwon",
+      "name": "Nongwon",
+      "type": "Farmland Continent",
+      "description": "Endless rolling plains of golden wheat, terraced rice paddies, and orchards bursting with fruit. Home to magical crops and Silkwood Forests.",
+      "colorTheme": "#FFD700",
+      "bannerImage": "images/continents/nongwon-banner.jpg"
+    },
+    {
+      "id": "yongju",
+      "name": "Yongju",
+      "type": "Dragon Continent",
+      "description": "Volcanic highlands with smoldering peaks, dragonbone spires, and lakes of liquid magma. Home to ancient draconic wards and the Ashen Wastes.",
+      "colorTheme": "#8B0000",
+      "bannerImage": "images/continents/yongju-banner.jpg"
+    },
+    {
+      "id": "haeguk",
+      "name": "Haeguk",
+      "type": "Ocean Continent",
+      "description": "Vast coral reefs, abyssal trenches, and archipelagos battered by typhoons. Underwater cities glow with bioluminescence, and whirlpools guard sunken treasures.",
+      "colorTheme": "#1E90FF",
+      "bannerImage": "images/continents/haeguk-banner.jpg"
+    },
+    {
+      "id": "pyeonji",
+      "name": "Pyeonji",
+      "type": "Shattered Continent",
+      "description": "Fractured landmasses floating in chaotic gravity fields, interspersed with unstable rifts and debris from other continents. Home to gravity storms and rift-mutated hybrids.",
+      "colorTheme": "#4B0082",
+      "bannerImage": "images/continents/pyeonji-banner.jpg"
+    }
+  ],
+  "beasts": [
+    {
+      "id": "magma-colossus",
+      "name": "Magma Colossus",
+      "threatLevel": "SSS+++",
+      "continentId": "hwayang",
+      "type": "Fire/Earth Titan",
+      "description": "A 50-foot-tall lava giant with a molten core. Wields a flaming obsidian maul.",
+      "strengths": [
+        "Immune to physical damage",
+        "Regenerates in lava"
+      ],
+      "weaknesses": [
+        "Shatters if doused with Arctic Spring Water (rare ice-aligned item)"
+      ],
+      "taming": "Only the OmniSummoner can bind it by surviving its 'Trial of Flame.'",
+      "image": "images/beasts/hwayang/magma-colossus.jpg"
+    },
+    {
+      "id": "inferno-wyrm",
+      "name": "Inferno Wyrm",
+      "threatLevel": "SSS++",
+      "continentId": "hwayang",
+      "type": "Fire/Air Serpent",
+      "description": "A flying serpent that breathes white-hot flames. Nests in volcano craters.",
+      "strengths": [
+        "Creates fire tornadoes",
+        "Heat melts armor"
+      ],
+      "weaknesses": [
+        "Wings freeze at high altitudes"
+      ],
+      "taming": "Feed it a Dragonheart Gem (dropped by SSS+ dragons).",
+      "image": "images/beasts/hwayang/inferno-wyrm.jpg"
+    },
+    {
+      "id": "blaze-hydra",
+      "name": "Blaze Hydra",
+      "threatLevel": "SSS+",
+      "continentId": "hwayang",
+      "type": "Fire/Poison Hybrid",
+      "description": "Three-headed serpent; each head spews lava, venom, or ash.",
+      "strengths": [
+        "Regrows heads unless all are severed simultaneously"
+      ],
+      "weaknesses": [
+        "Ice magic slows regeneration"
+      ],
+      "taming": "Untamable except by OmniSummoners using Soul Chains.",
+      "image": "images/beasts/hwayang/blaze-hydra.jpg"
+    },
+    {
+      "id": "obsidian-golem",
+      "name": "Obsidian Golem",
+      "threatLevel": "SSS",
+      "continentId": "hwayang",
+      "type": "Fire/Metal Construct",
+      "description": "A living fortress of black glass and magma. Guards volcanic mines.",
+      "strengths": [
+        "Reflects spells",
+        "Immune to fire"
+      ],
+      "weaknesses": [
+        "Lightning magic disrupts its core"
+      ],
+      "taming": "Insert a Magnetic Core (Cheolgeom tech) into its chest.",
+      "image": "images/beasts/hwayang/obsidian-golem.jpg"
+    },
+    {
+      "id": "ash-phoenix",
+      "name": "Ash Phoenix",
+      "threatLevel": "SS",
+      "continentId": "hwayang",
+      "type": "Fire/Light Avian",
+      "description": "A radiant bird reborn from ashes; its feathers cure burns.",
+      "strengths": [
+        "Heals allies",
+        "Creates smoke screens"
+      ],
+      "weaknesses": [
+        "Grounded if wings are wet"
+      ],
+      "taming": "Wolseong priests perform a Phoenix Pact ritual.",
+      "image": "images/beasts/hwayang/ash-phoenix.jpg"
+    },
+    {
+      "id": "lava-serpent",
+      "name": "Lava Serpent",
+      "threatLevel": "SS",
+      "continentId": "hwayang",
+      "type": "Fire/Earth",
+      "description": "Burrows through magma rivers; ambushes prey with lava geysers.",
+      "strengths": [
+        "Blends with molten rock",
+        "Suffocates foes with ash"
+      ],
+      "weaknesses": [
+        "Water magic hardens its scales"
+      ],
+      "taming": "Lure with Firebloom Nectar (Hwayang rare herb).",
+      "image": "images/beasts/hwayang/lava-serpent.jpg"
+    },
+    {
+      "id": "emberclaw-tiger",
+      "name": "Emberclaw Tiger",
+      "threatLevel": "S+",
+      "continentId": "hwayang",
+      "type": "Fire/Beast",
+      "description": "A striped predator with flaming claws. Hunts in volcanic jungles.",
+      "strengths": [
+        "Speed",
+        "Ignites terrain"
+      ],
+      "weaknesses": [
+        "Avoids waterlogged areas"
+      ],
+      "taming": "Offer a Charred Stag carcass.",
+      "image": "images/beasts/hwayang/emberclaw-tiger.jpg"
+    },
+    {
+      "id": "smoldering-basilisk",
+      "name": "Smoldering Basilisk",
+      "threatLevel": "S",
+      "continentId": "hwayang",
+      "type": "Fire/Stone",
+      "description": "Petrifies foes with glowing eyes; body radiates heat.",
+      "strengths": [
+        "Petrification gaze",
+        "Fire-resistant scales"
+      ],
+      "weaknesses": [
+        "Blind it with light magic"
+      ],
+      "taming": "Untamable (attacks all humans on sight).",
+      "image": "images/beasts/hwayang/smoldering-basilisk.jpg"
+    },
+    {
+      "id": "cinder-wolf-pack",
+      "name": "Cinder Wolf Pack",
+      "threatLevel": "A+",
+      "continentId": "hwayang",
+      "type": "Fire/Pack",
+      "description": "6-8 wolves with smoldering fur; hunt in coordinated packs.",
+      "strengths": [
+        "Overwhelm with numbers",
+        "Set traps with embers"
+      ],
+      "weaknesses": [
+        "Splitting the pack causes disarray"
+      ],
+      "taming": "Raise a pup with Fire-Resistant Milk.",
+      "image": "images/beasts/hwayang/cinder-wolf-pack.jpg"
+    },
+    {
+      "id": "flamefang-bear",
+      "name": "Flamefang Bear",
+      "threatLevel": "A",
+      "continentId": "hwayang",
+      "type": "Fire/Beast",
+      "description": "A bear with magma-coated fangs; hibernates in lava caves.",
+      "strengths": [
+        "Crushing bite",
+        "Fire aura"
+      ],
+      "weaknesses": [
+        "Sluggish in cold environments"
+      ],
+      "taming": "Bribe with Magma Honey (harvested from fireblooms).",
+      "image": "images/beasts/hwayang/flamefang-bear.jpg"
+    },
+    {
+      "id": "pyre-hawk",
+      "name": "Pyre Hawk",
+      "threatLevel": "B+",
+      "continentId": "hwayang",
+      "type": "Fire/Air",
+      "description": "A hawk that drops incendiary feathers. Scouts for larger predators.",
+      "strengths": [
+        "Surveillance",
+        "Dive-bomb attacks"
+      ],
+      "weaknesses": [
+        "Fragile wings"
+      ],
+      "taming": "Use a Fireproof Whistle to mimic its calls.",
+      "image": "images/beasts/hwayang/pyre-hawk.jpg"
+    },
+    {
+      "id": "scorchling-imp",
+      "name": "Scorchling Imp",
+      "threatLevel": "B",
+      "continentId": "hwayang",
+      "type": "Fire/Demon",
+      "description": "Mischievous, foot-tall imps that throw fireballs.",
+      "strengths": [
+        "Swarm tactics",
+        "Arson"
+      ],
+      "weaknesses": [
+        "Dislikes rain"
+      ],
+      "taming": "Bribe with shiny gems.",
+      "image": "images/beasts/hwayang/scorchling-imp.jpg"
+    },
+    {
+      "id": "magma-crab",
+      "name": "Magma Crab",
+      "threatLevel": "C+",
+      "continentId": "hwayang",
+      "type": "Fire/Water",
+      "description": "Armored crab that swims in lava; claws snap steel.",
+      "strengths": [
+        "Defensive shell",
+        "Ambush predator"
+      ],
+      "weaknesses": [
+        "Dies if removed from lava"
+      ],
+      "taming": "Untamable (too aggressive).",
+      "image": "images/beasts/hwayang/magma-crab.jpg"
+    },
+    {
+      "id": "ignis-sprite",
+      "name": "Ignis Sprite",
+      "threatLevel": "C",
+      "continentId": "hwayang",
+      "type": "Fire/Spirit",
+      "description": "Tiny flame spirits that possess weapons.",
+      "strengths": [
+        "Enhances fire weapons"
+      ],
+      "weaknesses": [
+        "Dies if separated from heat"
+      ],
+      "taming": "Capture in a Fire Crystal Vial.",
+      "image": "images/beasts/hwayang/ignis-sprite.jpg"
+    },
+    {
+      "id": "charhound",
+      "name": "Charhound",
+      "threatLevel": "D+",
+      "continentId": "hwayang",
+      "type": "Fire/Beast",
+      "description": "Dog-sized salamander; loyal if fed burnt meat.",
+      "strengths": [
+        "Fire breath",
+        "Loyal"
+      ],
+      "weaknesses": [
+        "Weak to physical blows"
+      ],
+      "taming": "Common pet for Hwageom soldiers.",
+      "image": "images/beasts/hwayang/charhound.jpg"
+    },
+    {
+      "id": "smokescale-viper",
+      "name": "Smokescale Viper",
+      "threatLevel": "D",
+      "continentId": "hwayang",
+      "type": "Fire/Poison",
+      "description": "Camouflages in ash; venom induces fever.",
+      "strengths": [
+        "Stealth",
+        "Paralysis venom"
+      ],
+      "weaknesses": [
+        "Sensitive to vibrations"
+      ],
+      "taming": "Herbalists use Anti-Venom Charms.",
+      "image": "images/beasts/hwayang/smokescale-viper.jpg"
+    },
+    {
+      "id": "ember-rat",
+      "name": "Ember Rat",
+      "threatLevel": "E+",
+      "continentId": "hwayang",
+      "type": "Fire/Rodent",
+      "description": "Glowing rats that chew through stone.",
+      "strengths": [
+        "Burrowing",
+        "Ignites flammable materials"
+      ],
+      "weaknesses": [
+        "Water douses their flames"
+      ],
+      "taming": "Pest control; rarely kept as pets.",
+      "image": "images/beasts/hwayang/ember-rat.jpg"
+    },
+    {
+      "id": "ash-mite-swarm",
+      "name": "Ash Mite Swarm",
+      "threatLevel": "E",
+      "continentId": "hwayang",
+      "type": "Fire/Insect",
+      "description": "Thousands of mites that strip flesh to bone.",
+      "strengths": [
+        "Overwhelm via numbers"
+      ],
+      "weaknesses": [
+        "Repelled by smoke"
+      ],
+      "taming": "Impossible; exterminate with fire.",
+      "image": "images/beasts/hwayang/ash-mite-swarm.jpg"
+    },
+    {
+      "id": "scoria-beetle",
+      "name": "Scoria Beetle",
+      "threatLevel": "F+",
+      "continentId": "hwayang",
+      "type": "Fire/Insect",
+      "description": "Beetles that eat obsidian; shells used for armor.",
+      "strengths": [
+        "Hardy",
+        "Heat-resistant"
+      ],
+      "weaknesses": [
+        "Slow-moving"
+      ],
+      "taming": "Farmers breed them for materials.",
+      "image": "images/beasts/hwayang/scoria-beetle.jpg"
+    },
+    {
+      "id": "heat-leech",
+      "name": "Heat Leech",
+      "threatLevel": "G-",
+      "continentId": "hwayang",
+      "type": "Fire/Parasite",
+      "description": "Leeches that drain body heat; used in torture.",
+      "strengths": [
+        "Stealthy",
+        "Numbs victims"
+      ],
+      "weaknesses": [
+        "Dies in cold temperatures"
+      ],
+      "taming": "Only Hwageom slavers use them.",
+      "image": "images/beasts/hwayang/heat-leech.jpg"
+    },
+    {
+      "id": "celestial-leviathan",
+      "name": "Celestial Leviathan",
+      "threatLevel": "SSS+++",
+      "continentId": "wolhwa",
+      "type": "Light/Water Titan",
+      "description": "Serpentine dragon with starry scales that swims through lakes like liquid light. Controls tides and dreams.",
+      "strengths": [
+        "Memory erasure",
+        "Intangibility"
+      ],
+      "weaknesses": [
+        "Vulnerable during lunar eclipses"
+      ],
+      "taming": "Only the OmniSummoner can bind it via 'Trials of Reflection'",
+      "image": "images/beasts/wolhwa/celestial-leviathan.jpg"
+    },
+    {
+      "id": "eclipse-harbinger",
+      "name": "Eclipse Harbinger",
+      "threatLevel": "SSS++",
+      "continentId": "wolhwa",
+      "type": "Light/Shadow Hybrid",
+      "description": "Winged humanoid with halo of darkness/light. Commands healing and decay magic.",
+      "strengths": [
+        "Dual-form shifting",
+        "Reality warping"
+      ],
+      "weaknesses": [
+        "Disoriented by mirrors"
+      ],
+      "taming": "Requires Dual Core Catalyst (moonstone + shadowgem fusion)",
+      "image": "images/beasts/wolhwa/eclipse-harbinger.jpg"
+    },
+    {
+      "id": "moonlight-stalker",
+      "name": "Moonlight Stalker",
+      "threatLevel": "SSS+",
+      "continentId": "wolhwa",
+      "type": "Light/Beast",
+      "description": "Panther-like predator with starry fur. Hunts by manipulating moonlight.",
+      "strengths": [
+        "Lunar invisibility",
+        "Paralysis gaze"
+      ],
+      "weaknesses": [
+        "Blinded by artificial light"
+      ],
+      "taming": "Wolseong priests use Lunar Lures (moonstone bait)",
+      "image": "images/beasts/wolhwa/moonlight-stalker.jpg"
+    },
+    {
+      "id": "dreamweaver-moth",
+      "name": "Dreamweaver Moth",
+      "threatLevel": "SSS",
+      "continentId": "wolhwa",
+      "type": "Light/Psychic",
+      "description": "Giant moth with hypnotic wing patterns that trap victims in endless dreams.",
+      "strengths": [
+        "Reality illusions",
+        "Mental draining"
+      ],
+      "weaknesses": [
+        "Sonic vulnerability"
+      ],
+      "taming": "Feed Dreamroot Pollen; bonds with shamans",
+      "image": "images/beasts/wolhwa/dreamweaver-moth.jpg"
+    },
+    {
+      "id": "starlight-kirin",
+      "name": "Starlight Kirin",
+      "threatLevel": "SS+",
+      "continentId": "wolhwa",
+      "type": "Light/Heaven",
+      "description": "Divine stag with crystalline antlers that purify corruption. Glows like constellations.",
+      "strengths": [
+        "Area healing",
+        "Curse nullification"
+      ],
+      "weaknesses": "Power fades in darkness",
+      "taming": "Pure-hearted bonding under starlight",
+      "image": "images/beasts/wolhwa/starlight-kirin.jpg"
+    },
+    {
+      "id": "gloom-wraith",
+      "name": "Gloom Wraith",
+      "threatLevel": "SS",
+      "continentId": "wolhwa",
+      "type": "Shadow/Spirit",
+      "description": "Vengeful spirit formed from unfulfilled wishes. Drains hope from victims.",
+      "strengths": [
+        "Intangibility",
+        "Despair induction"
+      ],
+      "weaknesses": [
+        "Dispelled by moonlight"
+      ],
+      "taming": "Untamable (resolve unfinished business)",
+      "image": "images/beasts/wolhwa/gloom-wraith.jpg"
+    },
+    {
+      "id": "silverfang-wolf",
+      "name": "Silverfang Wolf",
+      "threatLevel": "S+",
+      "continentId": "wolhwa",
+      "type": "Light/Beast",
+      "description": "Pack leader with metallic fur; howls summon moonlight beams.",
+      "strengths": [
+        "Lunar empowerment",
+        "Pack coordination"
+      ],
+      "weaknesses": [
+        "Overconfidence in combat"
+      ],
+      "taming": "Defeat in solo combat",
+      "image": "images/beasts/wolhwa/silverfang-wolf.jpg"
+    },
+    {
+      "id": "shadowbloom-spider",
+      "name": "Shadowbloom Spider",
+      "threatLevel": "S",
+      "continentId": "wolhwa",
+      "type": "Shadow/Plant",
+      "description": "Giant spider camouflaged as flowers; webs induce nightmares.",
+      "strengths": [
+        "Venomous fangs",
+        "Stealth ambush"
+      ],
+      "weaknesses": [
+        "Burns in moonlight"
+      ],
+      "taming": "Myeongwol Bu use Nightshade Venom",
+      "image": "images/beasts/wolhwa/shadowbloom-spider.jpg"
+    },
+    {
+      "id": "luminance-hawk",
+      "name": "Luminance Hawk",
+      "threatLevel": "A+",
+      "continentId": "wolhwa",
+      "type": "Light/Air",
+      "description": "Radiant hawk firing light arrows. Wolseong military scout.",
+      "strengths": [
+        "Long-range attacks",
+        "Reconnaissance"
+      ],
+      "weaknesses": [
+        "Fragile wing feathers"
+      ],
+      "taming": "Reward with Starlight Berries",
+      "image": "images/beasts/wolhwa/luminance-hawk.jpg"
+    },
+    {
+      "id": "duskfang-tiger",
+      "name": "Duskfang Tiger",
+      "threatLevel": "A",
+      "continentId": "wolhwa",
+      "type": "Shadow/Beast",
+      "description": "Black-striped tiger merging with shadows. Twilight ambusher.",
+      "strengths": [
+        "Silent movement",
+        "Armor penetration"
+      ],
+      "weaknesses": [
+        "Avoids daylight"
+      ],
+      "taming": "Raise cubs in darkness",
+      "image": "images/beasts/wolhwa/duskfang-tiger.jpg"
+    },
+    {
+      "id": "moonscale-serpent",
+      "name": "Moonscale Serpent",
+      "threatLevel": "B+",
+      "continentId": "wolhwa",
+      "type": "Light/Water",
+      "description": "Aquatic hypnosis snake with reflective scales.",
+      "strengths": [
+        "Constriction",
+        "Light magic immunity"
+      ],
+      "weaknesses": [
+        "Land stranding"
+      ],
+      "taming": "Calm with Lunar Flutes",
+      "image": "images/beasts/wolhwa/moonscale-serpent.jpg"
+    },
+    {
+      "id": "nightbloom-bat",
+      "name": "Nightbloom Bat",
+      "threatLevel": "B",
+      "continentId": "wolhwa",
+      "type": "Shadow/Air",
+      "description": "Plague-carrying bat swarm obscuring vision.",
+      "strengths": [
+        "Swarms",
+        "Disease vector"
+      ],
+      "weaknesses": [
+        "Fire vulnerability"
+      ],
+      "taming": "Repel with Anti-Pest Incense",
+      "image": "images/beasts/wolhwa/nightbloom-bat.jpg"
+    },
+    {
+      "id": "aurora-fox",
+      "name": "Aurora Fox",
+      "threatLevel": "C+",
+      "continentId": "wolhwa",
+      "type": "Light/Illusion",
+      "description": "Color-shifting fox creating treasure mirages.",
+      "strengths": [
+        "Deception",
+        "Light portals"
+      ],
+      "weaknesses": [
+        "Lured by shiny objects"
+      ],
+      "taming": "Trap with Gem-Encrusted Cage",
+      "image": "images/beasts/wolhwa/aurora-fox.jpg"
+    },
+    {
+      "id": "shadebear-cub",
+      "name": "Shadebear Cub",
+      "threatLevel": "C",
+      "continentId": "wolhwa",
+      "type": "Shadow/Beast",
+      "description": "Wall-phasing bear cub with dangerous curiosity.",
+      "strengths": [
+        "Surprise attacks",
+        "Phasing"
+      ],
+      "weaknesses": [
+        "Distracted by honey"
+      ],
+      "taming": "Bait with Shadowroot Honey",
+      "image": "images/beasts/wolhwa/shadebear-cub.jpg"
+    },
+    {
+      "id": "luminous-rabbit",
+      "name": "Luminous Rabbit",
+      "threatLevel": "D+",
+      "continentId": "wolhwa",
+      "type": "Light/Beast",
+      "description": "Glowing guide rabbit considered good omen.",
+      "strengths": [
+        "Speed",
+        "Minor healing"
+      ],
+      "weaknesses": [
+        "Skittish nature"
+      ],
+      "taming": "Befriend with carrots",
+      "image": "images/beasts/wolhwa/luminous-rabbit.jpg"
+    },
+    {
+      "id": "twilight-crow",
+      "name": "Twilight Crow",
+      "threatLevel": "D",
+      "continentId": "wolhwa",
+      "type": "Shadow/Air",
+      "description": "Syndicate spy crow with mimicry skills.",
+      "strengths": [
+        "Intelligence gathering",
+        "Voice mimicry"
+      ],
+      "weaknesses": [
+        "Bribed with trinkets"
+      ],
+      "taming": "Train with Shadow Tokens",
+      "image": "images/beasts/wolhwa/twilight-crow.jpg"
+    },
+    {
+      "id": "moonlit-cicada",
+      "name": "Moonlit Cicada",
+      "threatLevel": "E+",
+      "continentId": "wolhwa",
+      "type": "Light/Insect",
+      "description": "Tranquility-inducing singing insect.",
+      "strengths": [
+        "Calming chirps",
+        "Nightmare ward"
+      ],
+      "weaknesses": "1-week lifespan",
+      "taming": "Caged by healers",
+      "image": "images/beasts/wolhwa/moonlit-cicada.jpg"
+    },
+    {
+      "id": "glowworm-swarm",
+      "name": "Glowworm Swarm",
+      "threatLevel": "E",
+      "continentId": "wolhwa",
+      "type": "Light/Insect",
+      "description": "Medical bioluminescent worms cleansing decay.",
+      "strengths": [
+        "Wound cleaning",
+        "Harmless nature"
+      ],
+      "weaknesses": "Darkness fatal",
+      "taming": "Common hospital residents",
+      "image": "images/beasts/wolhwa/glowworm-swarm.jpg"
+    },
+    {
+      "id": "starfall-beetle",
+      "name": "Starfall Beetle",
+      "threatLevel": "F+",
+      "continentId": "wolhwa",
+      "type": "Light/Beetle",
+      "description": "Meteoric beetles used in jewelry-making.",
+      "strengths": [
+        "Natural glow",
+        "Durable shells"
+      ],
+      "weaknesses": "Flightless post-impact",
+      "taming": "Collected by jewelers",
+      "image": "images/beasts/wolhwa/starfall-beetle.jpg"
+    },
+    {
+      "id": "flicker-moth",
+      "name": "Flicker Moth",
+      "threatLevel": "G-",
+      "continentId": "wolhwa",
+      "type": "Light/Insect",
+      "description": " Tiny moths that follow light sources; used as living lanterns.",
+      "strengths": [
+        "Illuminates dark areas"
+      ],
+      "weaknesses": [
+        "Dies if exposed to fire"
+      ],
+      "taming": "Caught in Crystal Jars.",
+      "image": "images/beasts/wolhwa/flicker-moth.jpg"
+    },
+    {
+      "id": "ironclad-colossus",
+      "name": "Ironclad Colossus",
+      "threatLevel": "SSS+++",
+      "continentId": "cheolgeom",
+      "type": "Metal/Earth Titan",
+      "description": "A 100-foot-tall walking fortress with revolving sawblade arms and a molten core.",
+      "strengths": [
+        "Absorbs metal to heal",
+        "Immune to physical damage"
+      ],
+      "weaknesses": [
+        "Acid dissolves its joints",
+        "Core explodes if frozen"
+      ],
+      "taming": "OmniSummoner must embed a Soulforge Anchor into its core.",
+      "image": "images/beasts/cheolgeom/ironclad-colossus.jpg"
+    },
+    {
+      "id": "thunder-ram-legion",
+      "name": "Thunder Ram Legion",
+      "threatLevel": "SSS++",
+      "continentId": "cheolgeom",
+      "type": "Metal/Lightning Herd",
+      "description": "A herd of 50 rams with electrified horns; stampedes create lightning storms.",
+      "strengths": [
+        "Overloads machinery",
+        "Charges at mach speed"
+      ],
+      "weaknesses": [
+        "Rubber insulation nullifies lightning"
+      ],
+      "taming": "Cheonmugun engineers use Insulated Lassoes.",
+      "image": "images/beasts/cheolgeom/thunder-ram-legion.jpg"
+    },
+    {
+      "id": "razorfin-hawk",
+      "name": "Razorfin Hawk",
+      "threatLevel": "SSS+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Air Predator",
+      "description": "A hawk with blade-like wings that shreds armor. Hunts in magnetic storms.",
+      "strengths": [
+        "Precision strikes",
+        "Cuts through steel"
+      ],
+      "weaknesses": [
+        "Wings jam if oiled"
+      ],
+      "taming": "Reward with Sky-Iron Shards; loyal to blacksmiths.",
+      "image": "images/beasts/cheolgeom/razorfin-hawk.jpg"
+    },
+    {
+      "id": "forge-golem",
+      "name": "Forge Golem",
+      "threatLevel": "SSS",
+      "continentId": "cheolgeom",
+      "type": "Metal/Fire Construct",
+      "description": "A molten-metal humanoid that breathes white flames. Guards Cheonmugun forges.",
+      "strengths": [
+        "Repairs itself in lava",
+        "Melts weapons"
+      ],
+      "weaknesses": [
+        "Water magic hardens its body"
+      ],
+      "taming": "Insert a Cooling Core (Binghe artifact) into its chest.",
+      "image": "images/beasts/cheolgeom/forge-golem.jpg"
+    },
+    {
+      "id": "chainfang-hyena",
+      "name": "Chainfang Hyena",
+      "threatLevel": "SS+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Beast Pack",
+      "description": "Hyenas with spiked chains fused to their bodies. Drains victims into linked hivemind.",
+      "strengths": [
+        "Shared vitality",
+        "Entangles foes"
+      ],
+      "weaknesses": [
+        "Decapitate the alpha to disrupt the hivemind"
+      ],
+      "taming": "Cheonmugun soldiers use Chainbreaker Serums.",
+      "image": "images/beasts/cheolgeom/chainfang-hyena.jpg"
+    },
+    {
+      "id": "spikeback-rhino",
+      "name": "Spikeback Rhino",
+      "threatLevel": "SS",
+      "continentId": "cheolgeom",
+      "type": "Metal/Earth",
+      "description": "Armored rhino with retractable back spikes; charges through walls.",
+      "strengths": [
+        "Siege breaker",
+        "Impervious to arrows"
+      ],
+      "weaknesses": [
+        "Trips on uneven terrain"
+      ],
+      "taming": "Lure with Ironroot Tubers (Cheolgeom delicacy).",
+      "image": "images/beasts/cheolgeom/spikeback-rhino.jpg"
+    },
+    {
+      "id": "anvil-crab",
+      "name": "Anvil Crab",
+      "threatLevel": "S+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Water",
+      "description": "Giant crab with anvil-shaped shell; hammers foes with claws.",
+      "strengths": [
+        "Crushing power",
+        "Deflects projectiles"
+      ],
+      "weaknesses": [
+        "Shell cracks if heated then cooled rapidly"
+      ],
+      "taming": "Untamable (attacks all except Cheonmugun smiths).",
+      "image": "images/beasts/cheolgeom/anvil-crab.jpg"
+    },
+    {
+      "id": "gearspider",
+      "name": "Gearspider",
+      "threatLevel": "S",
+      "continentId": "cheolgeom",
+      "type": "Metal/Poison",
+      "description": "Mechanical spider that injects mercury venom. Webs are razor-wire traps.",
+      "strengths": [
+        "Ambush predator",
+        "Paralyzing venom"
+      ],
+      "weaknesses": [
+        "Vulnerable to magnetism"
+      ],
+      "taming": "Jangseung Mulguk blacksmiths use Magnetic Gauntlets.",
+      "image": "images/beasts/cheolgeom/gearspider.jpg"
+    },
+    {
+      "id": "boltsteed-stallion",
+      "name": "Boltsteed Stallion",
+      "threatLevel": "A+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Lightning",
+      "description": "Armored horse that gallops on lightning; used by Cheonmugun cavalry.",
+      "strengths": [
+        "Speed",
+        "Tramples foes with shocks"
+      ],
+      "weaknesses": [
+        "Exhausts quickly without metal feed"
+      ],
+      "taming": "Only bonds with riders who survive its Lightning Trial.",
+      "image": "images/beasts/cheolgeom/boltsteed-stallion.jpg"
+    },
+    {
+      "id": "ironmaw-wolf",
+      "name": "Ironmaw Wolf",
+      "threatLevel": "A",
+      "continentId": "cheolgeom",
+      "type": "Metal/Beast",
+      "description": "Wolf with steel fangs and grinding jaw muscles. Hunts in ore mines.",
+      "strengths": [
+        "Bites through metal",
+        "Pack coordination"
+      ],
+      "weaknesses": [
+        "Jaw locks if wedged open"
+      ],
+      "taming": "Feed Reinforced Meat (infused with sky-iron).",
+      "image": "images/beasts/cheolgeom/ironmaw-wolf.jpg"
+    },
+    {
+      "id": "quicksilver-serpent",
+      "name": "Quicksilver Serpent",
+      "threatLevel": "B+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Water",
+      "description": "Liquid mercury serpent; corrodes flesh on contact.",
+      "strengths": [
+        "Splits into smaller serpents",
+        "Toxic"
+      ],
+      "weaknesses": [
+        "Solidifies in cold"
+      ],
+      "taming": "Capture in a Mercury Flask (alchemists only).",
+      "image": "images/beasts/cheolgeom/quicksilver-serpent.jpg"
+    },
+    {
+      "id": "scrap-rat-swarm",
+      "name": "Scrap Rat Swarm",
+      "threatLevel": "B",
+      "continentId": "cheolgeom",
+      "type": "Metal/Vermin",
+      "description": "Thousands of rats that eat metal; plague Cheonmugun cities.",
+      "strengths": [
+        "Destroys infrastructure",
+        "Overwhelming numbers"
+      ],
+      "weaknesses": [
+        "Repelled by ultrasonic frequencies"
+      ],
+      "taming": "Impossible; exterminate with Sonic Cannons.",
+      "image": "images/beasts/cheolgeom/scrap-rat-swarm.jpg"
+    },
+    {
+      "id": "ore-worm",
+      "name": "Ore Worm",
+      "threatLevel": "C+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Earth",
+      "description": "Burrowing worm that digests metal ore; leaves tunnels.",
+      "strengths": [
+        "Mining aid",
+        "Non-aggressive"
+      ],
+      "weaknesses": [
+        "Dies if removed from ore deposits"
+      ],
+      "taming": "Miners use Ore Bait to direct them.",
+      "image": "images/beasts/cheolgeom/ore-worm.jpg"
+    },
+    {
+      "id": "shieldback-tortoise",
+      "name": "Shieldback Tortoise",
+      "threatLevel": "C",
+      "continentId": "cheolgeom",
+      "type": "Metal/Earth",
+      "description": "Tortoise with a spiked iron shell; retracts into a fortress.",
+      "strengths": [
+        "Defensive",
+        "Survives sieges"
+      ],
+      "weaknesses": [
+        "Slow-moving"
+      ],
+      "taming": "Cheonmugun uses them as mobile barricades.",
+      "image": "images/beasts/cheolgeom/shieldback-tortoise.jpg"
+    },
+    {
+      "id": "cogling",
+      "name": "Cogling",
+      "threatLevel": "D+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Construct",
+      "description": "Foot-tall mechanical gremlins that sabotage machinery.",
+      "strengths": [
+        "Stealth",
+        "Technical knowledge"
+      ],
+      "weaknesses": [
+        "Bribed with gears/oil"
+      ],
+      "taming": "Engineers reward them with Clockwork Treats.",
+      "image": "images/beasts/cheolgeom/cogling.jpg"
+    },
+    {
+      "id": "nailfoot-vulture",
+      "name": "Nailfoot Vulture",
+      "threatLevel": "D",
+      "continentId": "cheolgeom",
+      "type": "Metal/Air",
+      "description": "Vultures with nail-like talons; scavenge battlefields.",
+      "strengths": [
+        "Disease carriers",
+        "Detects corpses"
+      ],
+      "weaknesses": [
+        "Lazy; avoids live prey"
+      ],
+      "taming": "Untamable (considered bad omens).",
+      "image": "images/beasts/cheolgeom/nailfoot-vulture.jpg"
+    },
+    {
+      "id": "wireweaver-ant",
+      "name": "Wireweaver Ant",
+      "threatLevel": "E+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Insect",
+      "description": "Ants that spin steel silk; build indestructible hives.",
+      "strengths": [
+        "Silk harvest",
+        "Hive defense"
+      ],
+      "weaknesses": [
+        "Fire melts hives"
+      ],
+      "taming": "Farmers smoke hives to collect silk.",
+      "image": "images/beasts/cheolgeom/wireweaver-ant.jpg"
+    },
+    {
+      "id": "bolt-beetle",
+      "name": "Bolt Beetle",
+      "threatLevel": "E",
+      "continentId": "cheolgeom",
+      "type": "Metal/Insect",
+      "description": "Beetles that store static electricity; used as batteries.",
+      "strengths": [
+        "Portable power source",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Dies after discharging"
+      ],
+      "taming": "Stored in Insulated Jars.",
+      "image": "images/beasts/cheolgeom/bolt-beetle.jpg"
+    },
+    {
+      "id": "rust-mite-swarm",
+      "name": "Rust Mite Swarm",
+      "threatLevel": "F+",
+      "continentId": "cheolgeom",
+      "type": "Metal/Insect",
+      "description": "Mites that corrode metal to dust; infest Cheonmugun armories.",
+      "strengths": [
+        "Destroys equipment",
+        "Stealthy"
+      ],
+      "weaknesses": [
+        "Repelled by oil"
+      ],
+      "taming": "Untamable (pest).",
+      "image": "images/beasts/cheolgeom/rust-mite-swarm.jpg"
+    },
+    {
+      "id": "scrap-pigeon",
+      "name": "Scrap Pigeon",
+      "threatLevel": "G-",
+      "continentId": "cheolgeom",
+      "type": "Metal/Air",
+      "description": "Mechanical messenger birds used by Cheonmugun.",
+      "strengths": [
+        "Delivers orders",
+        "Surveillance"
+      ],
+      "weaknesses": [
+        "Falls apart if wet"
+      ],
+      "taming": "Pre-programmed with Command Cogs.",
+      "image": "images/beasts/cheolgeom/scrap-pigeon.jpg"
+    },
+    {
+      "id": "world-tree-guardian",
+      "name": "World Tree Guardian",
+      "threatLevel": "SSS+++",
+      "continentId": "chunmok",
+      "type": "Plant/Light Titan",
+      "description": "A 200-foot-tall treant with bark-like armor and roots that manipulate tectonic plates.",
+      "strengths": [
+        "Regrows limbs",
+        "Controls forests"
+      ],
+      "weaknesses": [
+        "Fire melts its sap",
+        "Dies if its core seed is burned"
+      ],
+      "taming": "OmniSummoner must survive its 'Trials of Balance' to earn its loyalty.",
+      "image": "images/beasts/chunmok/world-tree-guardian.jpg"
+    },
+    {
+      "id": "lotus-leviathan",
+      "name": "Lotus Leviathan",
+      "threatLevel": "SSS++",
+      "continentId": "chunmok",
+      "type": "Water/Plant Hybrid",
+      "description": "Serpentine creature with lotus-petal scales that drowns victims in its floating lake.",
+      "strengths": [
+        "Heals in water",
+        "Summons tidal waves"
+      ],
+      "weaknesses": [
+        "Uprooting its anchor lotus disables its magic"
+      ],
+      "taming": "Suryeon Bimu druids perform Aqua Pact rituals during monsoons.",
+      "image": "images/beasts/chunmok/lotus-leviathan.jpg"
+    },
+    {
+      "id": "thorned-behemoth",
+      "name": "Thorned Behemoth",
+      "threatLevel": "SSS+",
+      "continentId": "chunmok",
+      "type": "Plant/Beast",
+      "description": "Boar-like monster with vines for tusks and a body covered in poison thorns.",
+      "strengths": [
+        "Charges through forests",
+        "Thorns induce paralysis"
+      ],
+      "weaknesses": [
+        "Fire arrows ignite its hide"
+      ],
+      "taming": "Untamable except by OmniSummoners using Soulbind Thorns.",
+      "image": "images/beasts/chunmok/thorned-behemoth.jpg"
+    },
+    {
+      "id": "venombloom-dryad",
+      "name": "Venombloom Dryad",
+      "threatLevel": "SSS",
+      "continentId": "chunmok",
+      "type": "Plant/Poison",
+      "description": "Humanoid plant with flowers that release neurotoxins. Controls swarms of insects.",
+      "strengths": [
+        "Immune to poison",
+        "Spreads plagues"
+      ],
+      "weaknesses": [
+        "Vulnerable to frost magic"
+      ],
+      "taming": "Dokbul Maul assassins use Antidote Charms to negotiate.",
+      "image": "images/beasts/chunmok/venombloom-dryad.jpg"
+    },
+    {
+      "id": "mossclaw-grizzly",
+      "name": "Mossclaw Grizzly",
+      "threatLevel": "SS+",
+      "continentId": "chunmok",
+      "type": "Plant/Beast",
+      "description": "Bear fused with moss and fungi; spores explode on contact.",
+      "strengths": [
+        "Camouflage",
+        "Explosive close-range attacks"
+      ],
+      "weaknesses": [
+        "Droughts desiccate its moss armor"
+      ],
+      "taming": "Feed it Fertile Soil to gain temporary loyalty.",
+      "image": "images/beasts/chunmok/mossclaw-grizzly.jpg"
+    },
+    {
+      "id": "glowroot-serpent",
+      "name": "Glowroot Serpent",
+      "threatLevel": "SS",
+      "continentId": "chunmok",
+      "type": "Plant/Light",
+      "description": "Serpent with bioluminescent scales that hypnotizes prey with light patterns.",
+      "strengths": [
+        "Hypnosis",
+        "Heals in sunlight"
+      ],
+      "weaknesses": [
+        "Blind it with darkness"
+      ],
+      "taming": "Suryeon Bimu druids use Solar Lenses to redirect its light.",
+      "image": "images/beasts/chunmok/glowroot-serpent.jpg"
+    },
+    {
+      "id": "sporefang-spider",
+      "name": "Sporefang Spider",
+      "threatLevel": "S+",
+      "continentId": "chunmok",
+      "type": "Fungus/Beast",
+      "description": "Giant spider with mushroom cap; releases paralyzing spores.",
+      "strengths": [
+        "Ambush predator",
+        "Toxic webs"
+      ],
+      "weaknesses": [
+        "Fire burns spores"
+      ],
+      "taming": "Dokbul Maul assassins pacify it with Fungal Nectar.",
+      "image": "images/beasts/chunmok/sporefang-spider.jpg"
+    },
+    {
+      "id": "vineclaw-panther",
+      "name": "Vineclaw Panther",
+      "threatLevel": "S",
+      "continentId": "chunmok",
+      "type": "Plant/Shadow",
+      "description": "Panther with vine-like claws that strangle prey. Merges with shadows at night.",
+      "strengths": [
+        "Stealth",
+        "Suffocation grip"
+      ],
+      "weaknesses": [
+        "Light magic forces it into visibility"
+      ],
+      "taming": "Untamable (attacks all except Suryeon Bimu druids).",
+      "image": "images/beasts/chunmok/vineclaw-panther.jpg"
+    },
+    {
+      "id": "bloomfang-tiger",
+      "name": "Bloomfang Tiger",
+      "threatLevel": "A+",
+      "continentId": "chunmok",
+      "type": "Plant/Beast",
+      "description": "Tiger with flower-patterned fur; petals detach as razor-sharp projectiles.",
+      "strengths": [
+        "Ranged attacks",
+        "Regenerates petals"
+      ],
+      "weaknesses": [
+        "Petals wilt in heat"
+      ],
+      "taming": "Reward with Sunwater (purified lake water).",
+      "image": "images/beasts/chunmok/bloomfang-tiger.jpg"
+    },
+    {
+      "id": "rootwraith",
+      "name": "Rootwraith",
+      "threatLevel": "A",
+      "continentId": "chunmok",
+      "type": "Plant/Spirit",
+      "description": "Vengeful forest spirit that possesses trees to attack.",
+      "strengths": [
+        "Immortal unless its host tree is burned"
+      ],
+      "weaknesses": [
+        "Fire destroys its host"
+      ],
+      "taming": "Resolve its grudge through Suryeon Bimu rituals.",
+      "image": "images/beasts/chunmok/rootwraith.jpg"
+    },
+    {
+      "id": "luminous-stag",
+      "name": "Luminous Stag",
+      "threatLevel": "B+",
+      "continentId": "chunmok",
+      "type": "Plant/Light",
+      "description": "Stag with antlers glowing like lanterns; guides lost travelers.",
+      "strengths": [
+        "Purifies corruption",
+        "Detects danger"
+      ],
+      "weaknesses": [
+        "Hunted for its antlers"
+      ],
+      "taming": "Wolseong Wangguk priests befriend them with Starlight Berries.",
+      "image": "images/beasts/chunmok/luminous-stag.jpg"
+    },
+    {
+      "id": "thornling-swarm",
+      "name": "Thornling Swarm",
+      "threatLevel": "B",
+      "continentId": "chunmok",
+      "type": "Plant/Insect",
+      "description": "Thousands of thumb-sized beetles with thorny shells.",
+      "strengths": [
+        "Overwhelm foes",
+        "Strip flesh to bone"
+      ],
+      "weaknesses": [
+        "Repelled by smoke"
+      ],
+      "taming": "Impossible; exterminate with fire.",
+      "image": "images/beasts/chunmok/thornling-swarm.jpg"
+    },
+    {
+      "id": "shadevine-cobra",
+      "name": "Shadevine Cobra",
+      "threatLevel": "C+",
+      "continentId": "chunmok",
+      "type": "Plant/Shadow",
+      "description": "Cobra that slithers through shadows; venom induces hallucinations.",
+      "strengths": [
+        "Stealth",
+        "Psychological warfare"
+      ],
+      "weaknesses": [
+        "Light magic forces it into the open"
+      ],
+      "taming": "Myeongwol Bu assassins use Shadow Serums to control it.",
+      "image": "images/beasts/chunmok/shadevine-cobra.jpg"
+    },
+    {
+      "id": "dewspriteling",
+      "name": "Dewspriteling",
+      "threatLevel": "C",
+      "continentId": "chunmok",
+      "type": "Plant/Water",
+      "description": "Tiny humanoid plant spirits that heal allies with morning dew.",
+      "strengths": [
+        "Healing",
+        "Stealth"
+      ],
+      "weaknesses": [
+        "Dies if dehydrated"
+      ],
+      "taming": "Capture in Dew Vials; loyal to healers.",
+      "image": "images/beasts/chunmok/dewspriteling.jpg"
+    },
+    {
+      "id": "barkhide-boar",
+      "name": "Barkhide Boar",
+      "threatLevel": "D+",
+      "continentId": "chunmok",
+      "type": "Plant/Beast",
+      "description": "Boar with bark-like hide; charges through underbrush.",
+      "strengths": [
+        "Tank-like defense",
+        "Digs for roots"
+      ],
+      "weaknesses": [
+        "Slow, predictable charges"
+      ],
+      "taming": "Lure with Truffle Mushrooms.",
+      "image": "images/beasts/chunmok/barkhide-boar.jpg"
+    },
+    {
+      "id": "glowfly-colony",
+      "name": "Glowfly Colony",
+      "threatLevel": "D",
+      "continentId": "chunmok",
+      "type": "Plant/Light",
+      "description": "Bioluminescent flies that swarm around predators to disorient.",
+      "strengths": [
+        "Blinding flashes",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Repelled by smoke"
+      ],
+      "taming": "Used as natural lanterns; no taming needed.",
+      "image": "images/beasts/chunmok/glowfly-colony.jpg"
+    },
+    {
+      "id": "pitcher-plant-lurker",
+      "name": "Pitcher Plant Lurker",
+      "threatLevel": "E+",
+      "continentId": "chunmok",
+      "type": "Plant/Ambush",
+      "description": "Carnivorous plant that mimics flowers; dissolves prey in digestive acid.",
+      "strengths": [
+        "Surprise attacks",
+        "Acid pools"
+      ],
+      "weaknesses": [
+        "Uproot and burn it"
+      ],
+      "taming": "Untamable (mindless predator).",
+      "image": "images/beasts/chunmok/pitcher-plant-lurker.jpg"
+    },
+    {
+      "id": "silkvine-moth",
+      "name": "Silkvine Moth",
+      "threatLevel": "E",
+      "continentId": "chunmok",
+      "type": "Plant/Insect",
+      "description": "Moths that spin silk stronger than steel; cultivated by weavers.",
+      "strengths": [
+        "Silk production",
+        "Non-aggressive"
+      ],
+      "weaknesses": [
+        "Dies after laying eggs"
+      ],
+      "taming": "Keep in Mulberry Groves.",
+      "image": "images/beasts/chunmok/silkvine-moth.jpg"
+    },
+    {
+      "id": "sporehopper",
+      "name": "Sporehopper",
+      "threatLevel": "F+",
+      "continentId": "chunmok",
+      "type": "Plant/Insect",
+      "description": "Grasshopper-like insects that spread fertile spores.",
+      "strengths": [
+        "Enhances crop growth",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Eaten by birds"
+      ],
+      "taming": "Farmers attract them with Sugar Sap.",
+      "image": "images/beasts/chunmok/sporehopper.jpg"
+    },
+    {
+      "id": "leafspryte",
+      "name": "Leafspryte",
+      "threatLevel": "G-",
+      "continentId": "chunmok",
+      "type": "Plant/Spirit",
+      "description": "Animated leaves that play pranks; cause minor cuts.",
+      "strengths": [
+        "Distraction",
+        "Surveillance"
+      ],
+      "weaknesses": [
+        "Torn apart by wind"
+      ],
+      "taming": "Children trap them in Glass Jars.",
+      "image": "images/beasts/chunmok/leafspryte.jpg"
+    },
+    {
+      "id": "frost-titan",
+      "name": "Frost Titan",
+      "threatLevel": "SSS+++",
+      "continentId": "binghe",
+      "type": "Ice/Light Titan",
+      "description": "A 150-foot-tall humanoid glacier with aurora-like veins. Commands blizzards and shatters mountains.",
+      "strengths": [
+        "Regenerates in snowstorms",
+        "Creates ice clones"
+      ],
+      "weaknesses": [
+        "Volcanic magma melts its core"
+      ],
+      "taming": "OmniSummoner must survive its 'Trials of Endurance' in a -100°C storm.",
+      "image": "images/beasts/binghe/frost-titan.jpg"
+    },
+    {
+      "id": "aurora-leviathan",
+      "name": "Aurora Leviathan",
+      "threatLevel": "SSS++",
+      "continentId": "binghe",
+      "type": "Ice/Light Hybrid",
+      "description": "Serpentine whale that swims through auroras, emitting blinding light beams.",
+      "strengths": [
+        "Flies",
+        "Heals allies with light",
+        "Freezes entire armies"
+      ],
+      "weaknesses": [
+        "Grounded during solar eclipses"
+      ],
+      "taming": "Hyeolbang oracles perform Aurora Binding rituals during polar nights.",
+      "image": "images/beasts/binghe/aurora-leviathan.jpg"
+    },
+    {
+      "id": "blizzard-wyrm",
+      "name": "Blizzard Wyrm",
+      "threatLevel": "SSS+",
+      "continentId": "binghe",
+      "type": "Ice/Wind Dragon",
+      "description": "Wingless dragon that rides blizzards, freezing victims with its breath.",
+      "strengths": [
+        "Controls weather",
+        "Immune to cold"
+      ],
+      "weaknesses": [
+        "Fire melts its icy scales"
+      ],
+      "taming": "Untamable except by OmniSummoners using Frostfire Crystals.",
+      "image": "images/beasts/binghe/blizzard-wyrm.jpg"
+    },
+    {
+      "id": "iceblood-golem",
+      "name": "Iceblood Golem",
+      "threatLevel": "SSS",
+      "continentId": "binghe",
+      "type": "Ice/Stone Construct",
+      "description": "Golem with a core of eternal ice; fists cause avalanches.",
+      "strengths": [
+        "Shatters weapons on contact",
+        "Self-repairs with snow"
+      ],
+      "weaknesses": [
+        "Lightning cracks its core"
+      ],
+      "taming": "Hyeolbang engineers implant Thermal Cores to control it.",
+      "image": "images/beasts/binghe/iceblood-golem.jpg"
+    },
+    {
+      "id": "frost-howler",
+      "name": "Frost Howler",
+      "threatLevel": "SS+",
+      "continentId": "binghe",
+      "type": "Ice/Beast",
+      "description": "Wolf-like pack hunters with fur like steel wool. Howls induce hypothermia.",
+      "strengths": [
+        "Pack tactics",
+        "Freezing aura"
+      ],
+      "weaknesses": [
+        "Overheat in volcanic zones"
+      ],
+      "taming": "Raise pups with Frost-Resistant Milk.",
+      "image": "images/beasts/binghe/frost-howler.jpg"
+    },
+    {
+      "id": "glacial-nymph",
+      "name": "Glacial Nymph",
+      "threatLevel": "SS",
+      "continentId": "binghe",
+      "type": "Ice/Spirit",
+      "description": "Humanoid spirits that freeze victims with a touch. Guard sacred ice mirrors.",
+      "strengths": [
+        "Intangible",
+        "Curse enemies with eternal chill"
+      ],
+      "weaknesses": [
+        "Dispelled by sunlight"
+      ],
+      "taming": "Resolve their sorrow through Hyeolbang quests.",
+      "image": "images/beasts/binghe/glacial-nymph.jpg"
+    },
+    {
+      "id": "snowspire-owl",
+      "name": "Snowspire Owl",
+      "threatLevel": "S+",
+      "continentId": "binghe",
+      "type": "Ice/Air",
+      "description": "Giant owl with ice-feather projectiles. Sees through blizzards.",
+      "strengths": [
+        "Aerial surveillance",
+        "Silent kills"
+      ],
+      "weaknesses": [
+        "Feathers melt in heat"
+      ],
+      "taming": "Reward with Frost Mice (ice-aligned rodents).",
+      "image": "images/beasts/binghe/snowspire-owl.jpg"
+    },
+    {
+      "id": "rimefang-bear",
+      "name": "Rimefang Bear",
+      "threatLevel": "S",
+      "continentId": "binghe",
+      "type": "Ice/Beast",
+      "description": "Polar bear with diamond-hard claws; hibernates in icebergs.",
+      "strengths": [
+        "Crushes armor",
+        "Survives extreme cold"
+      ],
+      "weaknesses": [
+        "Slow in summer"
+      ],
+      "taming": "Lure with Arctic Salmon.",
+      "image": "images/beasts/binghe/rimefang-bear.jpg"
+    },
+    {
+      "id": "crystal-wasp-swarm",
+      "name": "Crystal Wasp Swarm",
+      "threatLevel": "A+",
+      "continentId": "binghe",
+      "type": "Ice/Insect",
+      "description": "Wasps with crystalline stingers that inject freezing venom.",
+      "strengths": [
+        "Overwhelm foes",
+        "Paralyze with cold"
+      ],
+      "weaknesses": [
+        "Fire destroys nests"
+      ],
+      "taming": "Hyeolbang alchemists use Flameless Smoke.",
+      "image": "images/beasts/binghe/crystal-wasp-swarm.jpg"
+    },
+    {
+      "id": "frostbite-spider",
+      "name": "Frostbite Spider",
+      "threatLevel": "A",
+      "continentId": "binghe",
+      "type": "Ice/Poison",
+      "description": "Spider with venom that freezes blood. Webs are icy traps.",
+      "strengths": [
+        "Ambush predator",
+        "Immune to cold"
+      ],
+      "weaknesses": [
+        "Webs melt near heat sources"
+      ],
+      "taming": "Dokbul Maul assassins use Antidote Charms.",
+      "image": "images/beasts/binghe/frostbite-spider.jpg"
+    },
+    {
+      "id": "icebloom-fox",
+      "name": "Icebloom Fox",
+      "threatLevel": "B+",
+      "continentId": "binghe",
+      "type": "Ice/Plant",
+      "description": "Fox with frostflower patterns; blooms iceflowers where it steps.",
+      "strengths": [
+        "Creates terrain hazards",
+        "Agile"
+      ],
+      "weaknesses": [
+        "Flowers wilt in heat"
+      ],
+      "taming": "Lure with Frost Pearls.",
+      "image": "images/beasts/binghe/icebloom-fox.jpg"
+    },
+    {
+      "id": "avalanche-crab",
+      "name": "Avalanche Crab",
+      "threatLevel": "B",
+      "continentId": "binghe",
+      "type": "Ice/Water",
+      "description": "Crab with glacier-shell armor; triggers avalanches with claws.",
+      "strengths": [
+        "Defensive",
+        "Burrows through ice"
+      ],
+      "weaknesses": [
+        "Dies in warm water"
+      ],
+      "taming": "Untamable (attacks all except Hyeolbang priests).",
+      "image": "images/beasts/binghe/avalanche-crab.jpg"
+    },
+    {
+      "id": "shiverling",
+      "name": "Shiverling",
+      "threatLevel": "C+",
+      "continentId": "binghe",
+      "type": "Ice/Spirit",
+      "description": "Tiny ice sprites that numb foes with frost kisses.",
+      "strengths": [
+        "Stealth",
+        "Sabotage"
+      ],
+      "weaknesses": [
+        "Dies in sunlight"
+      ],
+      "taming": "Capture in Ice Lanterns.",
+      "image": "images/beasts/binghe/shiverling.jpg"
+    },
+    {
+      "id": "snowstrider-hare",
+      "name": "Snowstrider Hare",
+      "threatLevel": "C",
+      "continentId": "binghe",
+      "type": "Ice/Beast",
+      "description": "Rabbit with snowshoe feet; evades predators effortlessly.",
+      "strengths": [
+        "Speed",
+        "Leaves false tracks"
+      ],
+      "weaknesses": [
+        "Hunted for fur"
+      ],
+      "taming": "Children befriend them with Frost Carrots.",
+      "image": "images/beasts/binghe/snowstrider-hare.jpg"
+    },
+    {
+      "id": "hoarfrost-moth",
+      "name": "Hoarfrost Moth",
+      "threatLevel": "D+",
+      "continentId": "binghe",
+      "type": "Ice/Insect",
+      "description": "Moths that spread frost wherever they land.",
+      "strengths": [
+        "Freezes small objects",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Dies in warmth"
+      ],
+      "taming": "Used to refrigerate food.",
+      "image": "images/beasts/binghe/hoarfrost-moth.jpg"
+    },
+    {
+      "id": "icicle-bat",
+      "name": "Icicle Bat",
+      "threatLevel": "D",
+      "continentId": "binghe",
+      "type": "Ice/Air",
+      "description": "Bats that drop sharp icicles. Roost in frozen caves.",
+      "strengths": [
+        "Dive-bomb attacks",
+        "Echolocation"
+      ],
+      "weaknesses": [
+        "Avoids firelight"
+      ],
+      "taming": "Untamable (considered pests).",
+      "image": "images/beasts/binghe/icicle-bat.jpg"
+    },
+    {
+      "id": "frostroot-worm",
+      "name": "Frostroot Worm",
+      "threatLevel": "E+",
+      "continentId": "binghe",
+      "type": "Ice/Plant",
+      "description": "Burrowing worms that cultivate frost-resistant roots.",
+      "strengths": [
+        "Aerates soil",
+        "Non-aggressive"
+      ],
+      "weaknesses": [
+        "Dies if exposed to heat"
+      ],
+      "taming": "Farmers guide them with Ice Melodies.",
+      "image": "images/beasts/binghe/frostroot-worm.jpg"
+    },
+    {
+      "id": "glimmer-pike",
+      "name": "Glimmer Pike",
+      "threatLevel": "E",
+      "continentId": "binghe",
+      "type": "Ice/Water",
+      "description": "Fish with bioluminescent scales; survives subzero waters.",
+      "strengths": [
+        "Food source",
+        "Glows in dark"
+      ],
+      "weaknesses": [
+        "Dies quickly out of water"
+      ],
+      "taming": "Kept in Ice Aquariums.",
+      "image": "images/beasts/binghe/glimmer-pike.jpg"
+    },
+    {
+      "id": "snowdust-beetle",
+      "name": "Snowdust Beetle",
+      "threatLevel": "F+",
+      "continentId": "binghe",
+      "type": "Ice/Insect",
+      "description": "Beetles that excrete snow-like powder; used in rituals.",
+      "strengths": [
+        "Harmless",
+        "Ceremonial use"
+      ],
+      "weaknesses": [
+        "Crushed easily"
+      ],
+      "taming": "Collected in Frost Jars.",
+      "image": "images/beasts/binghe/snowdust-beetle.jpg"
+    },
+    {
+      "id": "chillspryte",
+      "name": "Chillspryte",
+      "threatLevel": "G-",
+      "continentId": "binghe",
+      "type": "Ice/Spirit",
+      "description": "Playful spirit that creates minor frost patches.",
+      "strengths": [
+        "Entertainment",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Melts in hand warmth"
+      ],
+      "taming": "Children chase them for fun.",
+      "image": "images/beasts/binghe/chillspryte.jpg"
+    },
+    {
+      "id": "dread-titan",
+      "name": "Dread Titan",
+      "threatLevel": "SSS+++",
+      "continentId": "amgwang",
+      "type": "Undead/Shadow Titan",
+      "description": "A 200-foot-tall skeletal giant wielding a scythe of souls. Commands legions of wraiths.",
+      "strengths": [
+        "Absorbs life force",
+        "Immune to non-holy attacks"
+      ],
+      "weaknesses": [
+        "Holy light severs its soul tether"
+      ],
+      "taming": "OmniSummoner must bind it using a Soul Anchor forged in Wolhwa’s moonlight.",
+      "image": "images/beasts/amgwang/dread-titan.jpg"
+    },
+    {
+      "id": "bone-hydra",
+      "name": "Bone Hydra",
+      "threatLevel": "SSS++",
+      "continentId": "amgwang",
+      "type": "Undead/Poison Hybrid",
+      "description": "A nine-headed hydra with venomous bone fangs; regrows two heads per kill.",
+      "strengths": [
+        "Acid breath",
+        "Endless regeneration"
+      ],
+      "weaknesses": [
+        "Burn all heads simultaneously with holy fire"
+      ],
+      "taming": "Guryeokpa necromancers use Necrotic Collars to enslave it.",
+      "image": "images/beasts/amgwang/bone-hydra.jpg"
+    },
+    {
+      "id": "void-reaper",
+      "name": "Void Reaper",
+      "threatLevel": "SSS+",
+      "continentId": "amgwang",
+      "type": "Shadow/Spirit",
+      "description": "A cloaked specter that harvests souls via touch; phases through walls.",
+      "strengths": [
+        "Intangible",
+        "Drains mana"
+      ],
+      "weaknesses": [
+        "Trapped by mirrored surfaces"
+      ],
+      "taming": "Untamable except by OmniSummoners wielding Soul Resonance.",
+      "image": "images/beasts/amgwang/void-reaper.jpg"
+    },
+    {
+      "id": "plaguebringer",
+      "name": "Plaguebringer",
+      "threatLevel": "SSS",
+      "continentId": "amgwang",
+      "type": "Undead/Poison",
+      "description": "A rotting dragon that spreads virulent plagues via spores.",
+      "strengths": [
+        "Epidemic creation",
+        "Immune to disease"
+      ],
+      "weaknesses": [
+        "Purified by Wolseong’s healing springs"
+      ],
+      "taming": "Dokbul Maul assassins inject Antidote Serums to subdue it.",
+      "image": "images/beasts/amgwang/plaguebringer.jpg"
+    },
+    {
+      "id": "soulflame-wraith",
+      "name": "Soulflame Wraith",
+      "threatLevel": "SS+",
+      "continentId": "amgwang",
+      "type": "Fire/Spirit",
+      "description": "A flaming ghost that incinerates souls; born from betrayed oaths.",
+      "strengths": [
+        "Ignites spells",
+        "Possesses fire mages"
+      ],
+      "weaknesses": [
+        "Extinguished by tears of repentance"
+      ],
+      "taming": "Resolve its grudge through Hyeolbang rituals.",
+      "image": "images/beasts/amgwang/soulflame-wraith.jpg"
+    },
+    {
+      "id": "shadow-behemoth",
+      "name": "Shadow Behemoth",
+      "threatLevel": "SS",
+      "continentId": "amgwang",
+      "type": "Shadow/Beast",
+      "description": "A panther-like monster fused with darkness; consumes light to grow.",
+      "strengths": [
+        "Stealth",
+        "Light absorption"
+      ],
+      "weaknesses": [
+        "Forced into visibility by light magic"
+      ],
+      "taming": "Myeongwol Bu assassins use Umbral Chains.",
+      "image": "images/beasts/amgwang/shadow-behemoth.jpg"
+    },
+    {
+      "id": "carrion-crow-swarm",
+      "name": "Carrion Crow Swarm",
+      "threatLevel": "S+",
+      "continentId": "amgwang",
+      "type": "Undead/Air",
+      "description": "Thousands of undead crows that strip flesh and spread decay.",
+      "strengths": [
+        "Overwhelming numbers",
+        "Disease carriers"
+      ],
+      "weaknesses": [
+        "Repelled by holy incense"
+      ],
+      "taming": "Impossible; exterminate with firestorms.",
+      "image": "images/beasts/amgwang/carrion-crow-swarm.jpg"
+    },
+    {
+      "id": "bloodthorn-golem",
+      "name": "Bloodthorn Golem",
+      "threatLevel": "S",
+      "continentId": "amgwang",
+      "type": "Undead/Plant",
+      "description": "A golem of thorny vines and bone; regenerates via blood sacrifice.",
+      "strengths": [
+        "Self-heals",
+        "Entangles foes"
+      ],
+      "weaknesses": [
+        "Holy water rots its vines"
+      ],
+      "taming": "Suryeon Bimu druids use Purification Rites.",
+      "image": "images/beasts/amgwang/bloodthorn-golem.jpg"
+    },
+    {
+      "id": "ghoul-pack",
+      "name": "Ghoul Pack",
+      "threatLevel": "A+",
+      "continentId": "amgwang",
+      "type": "Undead/Beast",
+      "description": "Feral, cannibalistic humanoids that hunt in packs.",
+      "strengths": [
+        "Stealth",
+        "Disease bites"
+      ],
+      "weaknesses": [
+        "Decapitation or fire"
+      ],
+      "taming": "Guryeokpa necromancers control them with Necrotic Whistles.",
+      "image": "images/beasts/amgwang/ghoul-pack.jpg"
+    },
+    {
+      "id": "cursed-centipede",
+      "name": "Cursed Centipede",
+      "threatLevel": "A",
+      "continentId": "amgwang",
+      "type": "Poison/Undead",
+      "description": "A 30-foot centipede with venomous bone legs. Burrows through graveyards.",
+      "strengths": [
+        "Toxic bite",
+        "Burrow ambushes"
+      ],
+      "weaknesses": [
+        "Crush its head or freeze it"
+      ],
+      "taming": "Feed it Rotting Flesh laced with poison.",
+      "image": "images/beasts/amgwang/cursed-centipede.jpg"
+    },
+    {
+      "id": "shadehound",
+      "name": "Shadehound",
+      "threatLevel": "B+",
+      "continentId": "amgwang",
+      "type": "Shadow/Beast",
+      "description": "A dog-like predator that merges with shadows to stalk prey.",
+      "strengths": [
+        "Silent",
+        "Paralyzing howl"
+      ],
+      "weaknesses": [
+        "Light magic forces it to materialize"
+      ],
+      "taming": "Reward with Shadowsteak (meat cured in Shroud Mists).",
+      "image": "images/beasts/amgwang/shadehound.jpg"
+    },
+    {
+      "id": "bone-serpent",
+      "name": "Bone Serpent",
+      "threatLevel": "B",
+      "continentId": "amgwang",
+      "type": "Undead/Earth",
+      "description": "A skeletal snake that burrows through graves; constricts with ribcage body.",
+      "strengths": [
+        "Surprise attacks",
+        "Suffocation"
+      ],
+      "weaknesses": [
+        "Shattered by blunt force"
+      ],
+      "taming": "Untamable (mindless).",
+      "image": "images/beasts/amgwang/bone-serpent.jpg"
+    },
+    {
+      "id": "wailing-banshee",
+      "name": "Wailing Banshee",
+      "threatLevel": "C+",
+      "continentId": "amgwang",
+      "type": "Undead/Spirit",
+      "description": "A spirit whose scream ruptures eardrums and induces madness.",
+      "strengths": [
+        "Sonic attacks",
+        "Intangible"
+      ],
+      "weaknesses": [
+        "Silenced by Wolseong’s Moonlit Harps"
+      ],
+      "taming": "Resolve its sorrow via quests.",
+      "image": "images/beasts/amgwang/wailing-banshee.jpg"
+    },
+    {
+      "id": "rotspider",
+      "name": "Rotspider",
+      "threatLevel": "C",
+      "continentId": "amgwang",
+      "type": "Poison/Undead",
+      "description": "Spider with necrotic venom; webs decay flesh on contact.",
+      "strengths": [
+        "Ambush predator",
+        "Toxic webs"
+      ],
+      "weaknesses": [
+        "Fire burns webs and venom"
+      ],
+      "taming": "Dokbul Maul uses Anti-Venom Charms.",
+      "image": "images/beasts/amgwang/rotspider.jpg"
+    },
+    {
+      "id": "grave-rat-swarm",
+      "name": "Grave Rat Swarm",
+      "threatLevel": "D+",
+      "continentId": "amgwang",
+      "type": "Undead/Vermin",
+      "description": "Diseased rats that rise from corpses; spread plagues.",
+      "strengths": [
+        "Overwhelm",
+        "Infection"
+      ],
+      "weaknesses": [
+        "Holy water or pestilence wards"
+      ],
+      "taming": "Untamable (pests).",
+      "image": "images/beasts/amgwang/grave-rat-swarm.jpg"
+    },
+    {
+      "id": "specter-bat",
+      "name": "Specter Bat",
+      "threatLevel": "D",
+      "continentId": "amgwang",
+      "type": "Undead/Air",
+      "description": "Bats possessed by lost souls; drain mana via bites.",
+      "strengths": [
+        "Mana theft",
+        "Night vision"
+      ],
+      "weaknesses": [
+        "Repelled by moonlight"
+      ],
+      "taming": "Capture in Soul Cages.",
+      "image": "images/beasts/amgwang/specter-bat.jpg"
+    },
+    {
+      "id": "blackroot-vine",
+      "name": "Blackroot Vine",
+      "threatLevel": "E+",
+      "continentId": "amgwang",
+      "type": "Plant/Undead",
+      "description": "Animated vines that strangle intruders; grow from cursed soil.",
+      "strengths": [
+        "Silent killer",
+        "Regenerates"
+      ],
+      "weaknesses": [
+        "Uproot and burn"
+      ],
+      "taming": "Untamable (mindless).",
+      "image": "images/beasts/amgwang/blackroot-vine.jpg"
+    },
+    {
+      "id": "hauntling",
+      "name": "Hauntling",
+      "threatLevel": "E",
+      "continentId": "amgwang",
+      "type": "Undead/Spirit",
+      "description": "A weak poltergeist that moves objects and whispers lies.",
+      "strengths": [
+        "Distraction",
+        "Surveillance"
+      ],
+      "weaknesses": [
+        "Salt circles trap it"
+      ],
+      "taming": "Children dare each other to 'capture' them in jars.",
+      "image": "images/beasts/amgwang/hauntling.jpg"
+    },
+    {
+      "id": "mire-leech",
+      "name": "Mire Leech",
+      "threatLevel": "F+",
+      "continentId": "amgwang",
+      "type": "Poison/Water",
+      "description": "Leeches that infest cursed swamps; drain blood slowly.",
+      "strengths": [
+        "Stealthy",
+        "Numbing bite"
+      ],
+      "weaknesses": [
+        "Saltwater kills them"
+      ],
+      "taming": "Used in dark alchemy.",
+      "image": "images/beasts/amgwang/mire-leech.jpg"
+    },
+    {
+      "id": "dusk-moth",
+      "name": "Dusk Moth",
+      "threatLevel": "G-",
+      "continentId": "amgwang",
+      "type": "Shadow/Insect",
+      "description": "Moths that absorb light; create pockets of darkness.",
+      "strengths": [
+        "Minor stealth aid"
+      ],
+      "weaknesses": [
+        "Crushed easily"
+      ],
+      "taming": "Caught in Shadow Lanterns.",
+      "image": "images/beasts/amgwang/dusk-moth.jpg"
+    },
+    {
+      "id": "storm-titan",
+      "name": "Storm Titan",
+      "threatLevel": "SSS+++",
+      "continentId": "bungu",
+      "type": "Air/Lightning Titan",
+      "description": "A 500-foot-tall humanoid tempest with lightning for veins and hurricane eyes.",
+      "strengths": [
+        "Summons cataclysmic storms",
+        "Regenerates in thunderclouds"
+      ],
+      "weaknesses": [
+        "Grounded by earth magic"
+      ],
+      "taming": "OmniSummoner must survive its 'Trials of the Vortex' inside a tornado.",
+      "image": "images/beasts/bungu/storm-titan.jpg"
+    },
+    {
+      "id": "sky-leviathan",
+      "name": "Sky Leviathan",
+      "threatLevel": "SSS++",
+      "continentId": "bungu",
+      "type": "Air/Water Hybrid",
+      "description": "Serpentine creature that swims through clouds, raining acid monsoons.",
+      "strengths": [
+        "Floods islands",
+        "Immune to ranged attacks"
+      ],
+      "weaknesses": [
+        "Dissipates in deserts"
+      ],
+      "taming": "Haneul Soguk sky mages use Monsoon Anchors during dry seasons.",
+      "image": "images/beasts/bungu/sky-leviathan.jpg"
+    },
+    {
+      "id": "thunder-roc",
+      "name": "Thunder Roc",
+      "threatLevel": "SSS+",
+      "continentId": "bungu",
+      "type": "Air/Lightning",
+      "description": "Colossal bird with electrified feathers; wingspan blots out the sun.",
+      "strengths": [
+        "Lightning dive-bombs",
+        "Creates thunderclaps"
+      ],
+      "weaknesses": [
+        "Feathers plucked mid-flight disable it"
+      ],
+      "taming": "Untamable except by OmniSummoners using Stormbinders.",
+      "image": "images/beasts/bungu/thunder-roc.jpg"
+    },
+    {
+      "id": "cyclone-golem",
+      "name": "Cyclone Golem",
+      "threatLevel": "SSS",
+      "continentId": "bungu",
+      "type": "Air/Stone Construct",
+      "description": "Swirling vortex of rocks and wind; crushes islands into debris.",
+      "strengths": [
+        "Immune to physical damage",
+        "Absorbs projectiles"
+      ],
+      "weaknesses": [
+        "Disrupted by reverse-spinning tornadoes"
+      ],
+      "taming": "Haneul engineers implant Calm Cores to stabilize it.",
+      "image": "images/beasts/bungu/cyclone-golem.jpg"
+    },
+    {
+      "id": "zephyr-drake",
+      "name": "Zephyr Drake",
+      "threatLevel": "SS+",
+      "continentId": "bungu",
+      "type": "Air/Dragon",
+      "description": "Wingless dragon that rides jetstreams; bites supersonic.",
+      "strengths": [
+        "Mach-speed strikes",
+        "Manipulates air pressure"
+      ],
+      "weaknesses": [
+        "Grounded if wingspans are weighted"
+      ],
+      "taming": "Feed it Skywhale Blubber (rare delicacy).",
+      "image": "images/beasts/bungu/zephyr-drake.jpg"
+    },
+    {
+      "id": "cloud-kraken",
+      "name": "Cloud Kraken",
+      "threatLevel": "SS",
+      "continentId": "bungu",
+      "type": "Air/Water",
+      "description": "Translucent squid-like beast that strangles airships with mist tentacles.",
+      "strengths": [
+        "Camouflages in clouds",
+        "Drowns victims in fog"
+      ],
+      "weaknesses": [
+        "Dispersed by wind magic"
+      ],
+      "taming": "Sky pirates lure it with Siren Flares.",
+      "image": "images/beasts/bungu/cloud-kraken.jpg"
+    },
+    {
+      "id": "lightning-wisp-swarm",
+      "name": "Lightning Wisp Swarm",
+      "threatLevel": "S+",
+      "continentId": "bungu",
+      "type": "Air/Lightning",
+      "description": "Thousands of ball lightning orbs that overload machinery.",
+      "strengths": [
+        "Chain lightning",
+        "EMP bursts"
+      ],
+      "weaknesses": [
+        "Absorbed by Faraday Cages"
+      ],
+      "taming": "Haneul mages trap them in Storm Jars.",
+      "image": "images/beasts/bungu/lightning-wisp-swarm.jpg"
+    },
+    {
+      "id": "gale-serpent",
+      "name": "Gale Serpent",
+      "threatLevel": "S",
+      "continentId": "bungu",
+      "type": "Air/Beast",
+      "description": "Snake with wings; slices foes with wind-blade fangs.",
+      "strengths": [
+        "Agile",
+        "Cuts through armor"
+      ],
+      "weaknesses": [
+        "Grounded if wings are clipped"
+      ],
+      "taming": "Reward with Featherfruit (sky-plant).",
+      "image": "images/beasts/bungu/gale-serpent.jpg"
+    },
+    {
+      "id": "tempest-hawk",
+      "name": "Tempest Hawk",
+      "threatLevel": "A+",
+      "continentId": "bungu",
+      "type": "Air/Lightning",
+      "description": "Hawk that fires lightning from its beak; scouts for storms.",
+      "strengths": [
+        "Long-range strikes",
+        "Storm prediction"
+      ],
+      "weaknesses": [
+        "Feathers burn if wet"
+      ],
+      "taming": "Sky Dominion rangers use Thunder Whistles.",
+      "image": "images/beasts/bungu/tempest-hawk.jpg"
+    },
+    {
+      "id": "mist-panther",
+      "name": "Mist Panther",
+      "threatLevel": "A",
+      "continentId": "bungu",
+      "type": "Air/Illusion",
+      "description": "Panther that merges with fog; creates decoy clones.",
+      "strengths": [
+        "Stealth",
+        "Confusion tactics"
+      ],
+      "weaknesses": [
+        "Revealed by firelight"
+      ],
+      "taming": "Myeongwol Bu assassins use Fog Lamps to corner it.",
+      "image": "images/beasts/bungu/mist-panther.jpg"
+    },
+    {
+      "id": "skyray",
+      "name": "Skyray",
+      "threatLevel": "B+",
+      "continentId": "bungu",
+      "type": "Air/Water",
+      "description": "Manta ray-like creature that glides on thermals; shocks prey with tail.",
+      "strengths": [
+        "Silent flight",
+        "Electric sting"
+      ],
+      "weaknesses": [
+        "Dies if stranded on land"
+      ],
+      "taming": "Feed it Ionized Fish (charged by lightning).",
+      "image": "images/beasts/bungu/skyray.jpg"
+    },
+    {
+      "id": "whirlwind-fox",
+      "name": "Whirlwind Fox",
+      "threatLevel": "B",
+      "continentId": "bungu",
+      "type": "Air/Beast",
+      "description": "Fox with tornado tails; sucks foes into vortices.",
+      "strengths": [
+        "Area control",
+        "Escapes via cyclones"
+      ],
+      "weaknesses": [
+        "Disrupted by still air"
+      ],
+      "taming": "Lure with Spiral Berries (sky-plant).",
+      "image": "images/beasts/bungu/whirlwind-fox.jpg"
+    },
+    {
+      "id": "hailbeetle",
+      "name": "Hailbeetle",
+      "threatLevel": "C+",
+      "continentId": "bungu",
+      "type": "Air/Ice",
+      "description": "Beetle that fires hailstone projectiles; nests in storm clouds.",
+      "strengths": [
+        "Ranged attacks",
+        "Frost armor"
+      ],
+      "weaknesses": [
+        "Melts in heat"
+      ],
+      "taming": "Capture in Frost Nets (Binghe tech).",
+      "image": "images/beasts/bungu/hailbeetle.jpg"
+    },
+    {
+      "id": "glidewing-sparrow",
+      "name": "Glidewing Sparrow",
+      "threatLevel": "C",
+      "continentId": "bungu",
+      "type": "Air/Beast",
+      "description": "Sparrows with 10-foot wingspans; carry messages between islands.",
+      "strengths": [
+        "Speed",
+        "Non-aggressive"
+      ],
+      "weaknesses": [
+        "Hunted by sky predators"
+      ],
+      "taming": "Reward with Skyseed Crumbs.",
+      "image": "images/beasts/bungu/glidewing-sparrow.jpg"
+    },
+    {
+      "id": "gust-snake",
+      "name": "Gust Snake",
+      "threatLevel": "D+",
+      "continentId": "bungu",
+      "type": "Air/Beast",
+      "description": "Wingless snake that rides wind currents; constricts mid-air.",
+      "strengths": [
+        "Ambushes from above",
+        "Suffocates prey"
+      ],
+      "weaknesses": [
+        "Grounded by weighted nets"
+      ],
+      "taming": "Sky fishermen use Wind Lures.",
+      "image": "images/beasts/bungu/gust-snake.jpg"
+    },
+    {
+      "id": "cloudspider",
+      "name": "Cloudspider",
+      "threatLevel": "D",
+      "continentId": "bungu",
+      "type": "Air/Insect",
+      "description": "Spiders that spin webs between floating islands; silk is priceless.",
+      "strengths": [
+        "Web traps",
+        "Non-venomous"
+      ],
+      "weaknesses": [
+        "Webs dissolve in rain"
+      ],
+      "taming": "Harvesters use Silk Gloves to collect webs.",
+      "image": "images/beasts/bungu/cloudspider.jpg"
+    },
+    {
+      "id": "breezeling",
+      "name": "Breezeling",
+      "threatLevel": "E+",
+      "continentId": "bungu",
+      "type": "Air/Spirit",
+      "description": "Tiny wind sprites that play pranks; knock items off cliffs.",
+      "strengths": [
+        "Distraction",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Trapped in sealed jars"
+      ],
+      "taming": "Children chase them for fun.",
+      "image": "images/beasts/bungu/breezeling.jpg"
+    },
+    {
+      "id": "zephyr-moth",
+      "name": "Zephyr Moth",
+      "threatLevel": "E",
+      "continentId": "bungu",
+      "type": "Air/Insect",
+      "description": "Moths that flutter in perfect wind patterns; predict weather.",
+      "strengths": [
+        "Weather forecasting",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Crushed easily"
+      ],
+      "taming": "Sky sailors keep them as luck charms.",
+      "image": "images/beasts/bungu/zephyr-moth.jpg"
+    },
+    {
+      "id": "driftbloom",
+      "name": "Driftbloom",
+      "threatLevel": "F+",
+      "continentId": "bungu",
+      "type": "Air/Plant",
+      "description": "Floating flowers that purify air; cultivated in sky gardens.",
+      "strengths": [
+        "Air filtration",
+        "Beautiful"
+      ],
+      "weaknesses": [
+        "Wilts without wind"
+      ],
+      "taming": "Planted in Wind Pots.",
+      "image": "images/beasts/bungu/driftbloom.jpg"
+    },
+    {
+      "id": "flutterfly",
+      "name": "Flutterfly",
+      "threatLevel": "G-",
+      "continentId": "bungu",
+      "type": "Air/Insect",
+      "description": "Glowing flies that light paths on dark islands.",
+      "strengths": [
+        "Bioluminescence",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Dies in storms"
+      ],
+      "taming": "Caught in Lantern Jars.",
+      "image": "images/beasts/bungu/flutterfly.jpg"
+    },
+    {
+      "id": "terra-titan",
+      "name": "Terra Titan",
+      "threatLevel": "SSS+++",
+      "continentId": "nongwon",
+      "type": "Earth/Life Titan",
+      "description": "A 300-foot-tall humanoid of soil and roots; controls crop growth and earthquakes.",
+      "strengths": [
+        "Regenerates via photosynthesis",
+        "Summons vine armies"
+      ],
+      "weaknesses": [
+        "Volcanic fire burns its roots"
+      ],
+      "taming": "OmniSummoner must bond with its Worldseed Core during harvest season.",
+      "image": "images/beasts/nongwon/terra-titan.jpg"
+    },
+    {
+      "id": "harvest-leviathan",
+      "name": "Harvest Leviathan",
+      "threatLevel": "SSS++",
+      "continentId": "nongwon",
+      "type": "Earth/Water Hybrid",
+      "description": "Serpentine creature with cornstalk scales that floods fields to drown foes.",
+      "strengths": [
+        "Purifies water",
+        "Grows crops instantly"
+      ],
+      "weaknesses": [
+        "Droughts desiccate it"
+      ],
+      "taming": "Miju Hyang druids perform Raincall Rituals to appease it.",
+      "image": "images/beasts/nongwon/harvest-leviathan.jpg"
+    },
+    {
+      "id": "quake-behemoth",
+      "name": "Quake Behemoth",
+      "threatLevel": "SSS+",
+      "continentId": "nongwon",
+      "type": "Earth/Beast",
+      "description": "Boar-like monster with tusks that split the earth; triggers fissures.",
+      "strengths": [
+        "Seismic stomps",
+        "Armored hide"
+      ],
+      "weaknesses": [
+        "Trapped in quicksand"
+      ],
+      "taming": "Untamable except by OmniSummoners using Tremor Cuffs.",
+      "image": "images/beasts/nongwon/quake-behemoth.jpg"
+    },
+    {
+      "id": "amber-golem",
+      "name": "Amber Golem",
+      "threatLevel": "SSS",
+      "continentId": "nongwon",
+      "type": "Earth/Stone Construct",
+      "description": "Golem of petrified honey and gemstones; guards ancient granaries.",
+      "strengths": [
+        "Immune to poison",
+        "Crushes foes with amber fists"
+      ],
+      "weaknesses": [
+        "Dissolves in vinegar"
+      ],
+      "taming": "Farmers pour Sacred Honey into its core.",
+      "image": "images/beasts/nongwon/amber-golem.jpg"
+    },
+    {
+      "id": "thorned-reaper",
+      "name": "Thorned Reaper",
+      "threatLevel": "SS+",
+      "continentId": "nongwon",
+      "type": "Plant/Death",
+      "description": "Sentient scarecrow with scythe hands; harvests souls during autumn.",
+      "strengths": [
+        "Steals life force",
+        "Controls crows"
+      ],
+      "weaknesses": [
+        "Burned by summer sunlight"
+      ],
+      "taming": "Resolve its curse via Nongwon folklore quests.",
+      "image": "images/beasts/nongwon/thorned-reaper.jpg"
+    },
+    {
+      "id": "grain-guardian",
+      "name": "Grain Guardian",
+      "threatLevel": "SS",
+      "continentId": "nongwon",
+      "type": "Earth/Plant",
+      "description": "Animated wheat golem that patrols fields; strangles intruders with stalks.",
+      "strengths": [
+        "Endless numbers",
+        "Merges with crops"
+      ],
+      "weaknesses": [
+        "Harvest sickles sever its roots"
+      ],
+      "taming": "Farmers 'negotiate' by offering grain tributes.",
+      "image": "images/beasts/nongwon/grain-guardian.jpg"
+    },
+    {
+      "id": "blight-rat-swarm",
+      "name": "Blight Rat Swarm",
+      "threatLevel": "S+",
+      "continentId": "nongwon",
+      "type": "Poison/Vermin",
+      "description": "Thousands of rats that rot crops with a touch; spread famine.",
+      "strengths": [
+        "Overwhelm",
+        "Disease clouds"
+      ],
+      "weaknesses": [
+        "Repelled by Herbal Incense"
+      ],
+      "taming": "Impossible; exterminate with fire or cats.",
+      "image": "images/beasts/nongwon/blight-rat-swarm.jpg"
+    },
+    {
+      "id": "silkwood-dryad",
+      "name": "Silkwood Dryad",
+      "threatLevel": "S",
+      "continentId": "nongwon",
+      "type": "Plant/Spirit",
+      "description": "Tree spirit with silkwood bark; entangles foes in threads.",
+      "strengths": [
+        "Silk armor",
+        "Hypnotic pollen"
+      ],
+      "weaknesses": [
+        "Defeated by shearing its bark"
+      ],
+      "taming": "Suryeon Bimu druids sing Grove Hymns to calm it.",
+      "image": "images/beasts/nongwon/silkwood-dryad.jpg"
+    },
+    {
+      "id": "honeyhorn-beetle",
+      "name": "Honeyhorn Beetle",
+      "threatLevel": "A+",
+      "continentId": "nongwon",
+      "type": "Earth/Insect",
+      "description": "Giant beetle that produces healing honey; pollinates magical flowers.",
+      "strengths": [
+        "Defensive shell",
+        "Non-aggressive"
+      ],
+      "weaknesses": [
+        "Slow, coveted by poachers"
+      ],
+      "taming": "Reward with Nectar Blooms.",
+      "image": "images/beasts/nongwon/honeyhorn-beetle.jpg"
+    },
+    {
+      "id": "terrahoof-stag",
+      "name": "Terrahoof Stag",
+      "threatLevel": "A",
+      "continentId": "nongwon",
+      "type": "Earth/Beast",
+      "description": "Stag with hooves that sprout flowers; stabilizes soil erosion.",
+      "strengths": [
+        "Speed",
+        "Terraforms land"
+      ],
+      "weaknesses": [
+        "Hunted for its antlers (ground into fertilizer)"
+      ],
+      "taming": "Lure with Mineral Salt Licks.",
+      "image": "images/beasts/nongwon/terrahoof-stag.jpg"
+    },
+    {
+      "id": "mudpuppy",
+      "name": "Mudpuppy",
+      "threatLevel": "B+",
+      "continentId": "nongwon",
+      "type": "Earth/Water",
+      "description": "Amphibious salamander that cleans irrigation canals; eats pests.",
+      "strengths": [
+        "Pest control",
+        "Loyal"
+      ],
+      "weaknesses": [
+        "Dies if dehydrated"
+      ],
+      "taming": "Feed it Mud Shrimp (found in paddies).",
+      "image": "images/beasts/nongwon/mudpuppy.jpg"
+    },
+    {
+      "id": "thresher-fox",
+      "name": "Thresher Fox",
+      "threatLevel": "B",
+      "continentId": "nongwon",
+      "type": "Earth/Beast",
+      "description": "Fox with scythe-like tail; cuts grain stalks for fun.",
+      "strengths": [
+        "Harvest aid",
+        "Agile"
+      ],
+      "weaknesses": [
+        "Steals tools"
+      ],
+      "taming": "Bribe with Sunripe Melons.",
+      "image": "images/beasts/nongwon/thresher-fox.jpg"
+    },
+    {
+      "id": "dew-sprite",
+      "name": "Dew Sprite",
+      "threatLevel": "C+",
+      "continentId": "nongwon",
+      "type": "Water/Spirit",
+      "description": "Tiny water spirits that water crops at night; playful but shy.",
+      "strengths": [
+        "Irrigation",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Evaporates in daylight"
+      ],
+      "taming": "Farmers leave Clay Jugs as offerings.",
+      "image": "images/beasts/nongwon/dew-sprite.jpg"
+    },
+    {
+      "id": "bramblehog",
+      "name": "Bramblehog",
+      "threatLevel": "C",
+      "continentId": "nongwon",
+      "type": "Plant/Beast",
+      "description": "Hedgehog with thorny quills; rolls into boulders.",
+      "strengths": [
+        "Defense",
+        "Seed dispersal"
+      ],
+      "weaknesses": [
+        "Loves berries; distracted easily"
+      ],
+      "taming": "Lure into traps with Sweetfruit.",
+      "image": "images/beasts/nongwon/bramblehog.jpg"
+    },
+    {
+      "id": "seedsparrow",
+      "name": "Seedsparrow",
+      "threatLevel": "D+",
+      "continentId": "nongwon",
+      "type": "Earth/Air",
+      "description": "Sparrows that plant seeds mid-flight; vital for reforestation.",
+      "strengths": [
+        "Crop propagation",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Targeted by hawks"
+      ],
+      "taming": "Scatter seeds to attract flocks.",
+      "image": "images/beasts/nongwon/seedsparrow.jpg"
+    },
+    {
+      "id": "rootsnake",
+      "name": "Rootsnake",
+      "threatLevel": "D",
+      "continentId": "nongwon",
+      "type": "Earth/Beast",
+      "description": "Burrowing snake that aerates soil; non-venomous.",
+      "strengths": [
+        "Pest control",
+        "Improves farmland"
+      ],
+      "weaknesses": [
+        "Dies if stepped on"
+      ],
+      "taming": "Farmers tolerate them as allies.",
+      "image": "images/beasts/nongwon/rootsnake.jpg"
+    },
+    {
+      "id": "blossom-mite",
+      "name": "Blossom Mite",
+      "threatLevel": "E+",
+      "continentId": "nongwon",
+      "type": "Plant/Insect",
+      "description": "Tiny mites that prune plants; overpopulation causes blight.",
+      "strengths": [
+        "Natural pruning",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Controlled by Herbal Smoke"
+      ],
+      "taming": "Untamable (managed, not tamed).",
+      "image": "images/beasts/nongwon/blossom-mite.jpg"
+    },
+    {
+      "id": "claypaw-rabbit",
+      "name": "Claypaw Rabbit",
+      "threatLevel": "E",
+      "continentId": "nongwon",
+      "type": "Earth/Beast",
+      "description": "Rabbits with clay-coated fur; dig burrows that enrich soil.",
+      "strengths": [
+        "Soil health",
+        "Fast breeding"
+      ],
+      "weaknesses": [
+        "Overpopulate if unchecked"
+      ],
+      "taming": "Children keep them as pets.",
+      "image": "images/beasts/nongwon/claypaw-rabbit.jpg"
+    },
+    {
+      "id": "sunstalker",
+      "name": "Sunstalker",
+      "threatLevel": "F+",
+      "continentId": "nongwon",
+      "type": "Plant/Light",
+      "description": "Sunflower-like plant that follows the sun; seeds boost stamina.",
+      "strengths": [
+        "Solar tracking",
+        "Edible seeds"
+      ],
+      "weaknesses": [
+        "Wilts at night"
+      ],
+      "taming": "Planted in Sunsoil Pots.",
+      "image": "images/beasts/nongwon/sunstalker.jpg"
+    },
+    {
+      "id": "glowgrub",
+      "name": "Glowgrub",
+      "threatLevel": "G-",
+      "continentId": "nongwon",
+      "type": "Earth/Insect",
+      "description": "Glowing larvae that compost waste; used in lanterns.",
+      "strengths": [
+        "Waste management",
+        "Bioluminescence"
+      ],
+      "weaknesses": [
+        "Dies after metamorphosis"
+      ],
+      "taming": "Collected in Compost Jars.",
+      "image": "images/beasts/nongwon/glowgrub.jpg"
+    },
+    {
+      "id": "eclipse-serpent",
+      "name": "Eclipse Serpent",
+      "threatLevel": "SSS+++",
+      "continentId": "yongju",
+      "type": "Time/Dragon Titan",
+      "description": "A serpentine dragon with obsidian scales that shimmer with constellations. Dormant in the Ashen Spine, its awakening warps time during solar eclipses.",
+      "strengths": [
+        "Manipulates time (slows/stops foes)",
+        "Immune to non-temporal attacks"
+      ],
+      "weaknesses": [
+        "Vulnerable during 3-second 'true eclipse' (third eye opens)"
+      ],
+      "taming": "OmniSummoner must outpace its time-loop via a Celestial Sundial artifact.",
+      "image": "images/beasts/yongju/eclipse-serpent.jpg"
+    },
+    {
+      "id": "magma-kraken",
+      "name": "Magma Kraken",
+      "threatLevel": "SSS++",
+      "continentId": "yongju",
+      "type": "Fire/Water-Dragon Hybrid",
+      "description": "A tentacled leviathan dwelling in Yongju’s subterranean magma seas. Its beak crushes Dragonsteel.",
+      "strengths": [
+        "Melts armor with magma ink",
+        "Regenerates limbs"
+      ],
+      "weaknesses": [
+        "Tentacles solidify if doused in Wolseong’s moon-tide water"
+      ],
+      "taming": "Haejeok pirates harpoon it using chains forged from Ignarion’s fangs.",
+      "image": "images/beasts/yongju/magma-kraken.jpg"
+    },
+    {
+      "id": "soulflare-wyrm",
+      "name": "Soulflare Wyrm",
+      "threatLevel": "SSS+",
+      "continentId": "yongju",
+      "type": "Spirit/Dragon",
+      "description": "A translucent dragon born from the souls of broken Blood Oaths. Glides through solid rock to ambush clans.",
+      "strengths": [
+        "Possesses mortals",
+        "Drains life-force"
+      ],
+      "weaknesses": [
+        "Banished by Dragonblood-infused weapons"
+      ],
+      "taming": "Yonghon Jeok trap it in a Soulforge Amulet, sacrificing their own memories.",
+      "image": "images/beasts/yongju/soulflare-wyrm.jpg"
+    },
+    {
+      "id": "gravemaw-colossus",
+      "name": "Gravemaw Colossus",
+      "threatLevel": "SSS",
+      "continentId": "yongju",
+      "type": "Gravity/Dragon",
+      "description": "A hulking dragon with a black hole in its chest. Roams the Ashen Wastes, pulling entire villages into its maw.",
+      "strengths": [
+        "Crushes foes with localized gravity wells"
+      ],
+      "weaknesses": [
+        "Reverse gravity spells destabilize its core"
+      ],
+      "taming": "Cheonmugun engineers use Rift Anchors to pin it mid-air.",
+      "image": "images/beasts/yongju/gravemaw-colossus.jpg"
+    },
+    {
+      "id": "crystal-hydra",
+      "name": "Crystal Hydra",
+      "threatLevel": "SS+",
+      "continentId": "yongju",
+      "type": "Crystal/Dragon",
+      "description": "A seven-headed hydra with Ember Crystals growing from its necks. Each head embodies a dragon clan’s sin (greed, wrath, etc.).",
+      "strengths": [
+        "Shattered heads regrow as crystalline spikes"
+      ],
+      "weaknesses": [
+        "All heads must be severed simultaneously with Dragonsteel blades"
+      ],
+      "taming": "Wolseong priests perform a Chorus of Atonement to pacify it.",
+      "image": "images/beasts/yongju/crystal-hydra.jpg"
+    },
+    {
+      "id": "blazefang-chimera",
+      "name": "Blazefang Chimera",
+      "threatLevel": "SS",
+      "continentId": "yongju",
+      "type": "Chaos/Dragon",
+      "description": "A grotesque fusion of dragon, lion, and scorpion, stitched by Yonghon Jeok alchemists. Breathes radioactive fire.",
+      "strengths": [
+        "Adapts to elemental attacks mid-battle"
+      ],
+      "weaknesses": [
+        "Unstable core explodes if frozen then ignited"
+      ],
+      "taming": "Feed it a Chaos Core (harvested from rift mutants).",
+      "image": "images/beasts/yongju/blazefang-chimera.jpg"
+    },
+    {
+      "id": "voidshriek-harpy",
+      "name": "Voidshriek Harpy",
+      "threatLevel": "S+",
+      "continentId": "yongju",
+      "type": "Void/Dragon",
+      "description": "A winged humanoid with a draconic tail and a mouthless face. Emits silence that erases spells.",
+      "strengths": [
+        "Nullifies magic",
+        "Teleports via shadows"
+      ],
+      "weaknesses": [
+        "Screams in agony when exposed to loud music"
+      ],
+      "taming": "Myeongwol Bu assassins use Soundstone Flutes to dominate it.",
+      "image": "images/beasts/yongju/voidshriek-harpy.jpg"
+    },
+    {
+      "id": "bloodscale-leviathan",
+      "name": "Bloodscale Leviathan",
+      "threatLevel": "S",
+      "continentId": "yongju",
+      "type": "Blood/Dragon",
+      "description": "A crimson eel-dragon that swims through Yongju’s magma rivers, drinking Dragonblood to grow.",
+      "strengths": [
+        "Controls blood of wounded foes"
+      ],
+      "weaknesses": [
+        "Dehydrates if lured into the Scaleless Wastes"
+      ],
+      "taming": "Ignis Clan tempts it with vials of their patriarch’s blood.",
+      "image": "images/beasts/yongju/bloodscale-leviathan.jpg"
+    },
+    {
+      "id": "blightspine-golem",
+      "name": "Blightspine Golem",
+      "threatLevel": "A+",
+      "continentId": "yongju",
+      "type": "Plague/Dragon",
+      "description": "Animated dragonbone infused with venomous algae from cursed lakes. Infects crops and water.",
+      "strengths": [
+        "Spreads petrifying blight",
+        "Immune to poison"
+      ],
+      "weaknesses": [
+        "Purified by Ember Crystal light"
+      ],
+      "taming": "Hyeolbang oracles bury it in salt mixed with volcanic ash.",
+      "image": "images/beasts/yongju/blightspine-golem.jpg"
+    },
+    {
+      "id": "riftstalker-drake",
+      "name": "Riftstalker Drake",
+      "threatLevel": "A",
+      "continentId": "yongju",
+      "type": "Dimensional/Dragon",
+      "description": "A panther-like drake with rift-scarred hide. Phases in/out of reality to ambush prey.",
+      "strengths": [
+        "Bypasses armor",
+        "Steals items from pockets"
+      ],
+      "weaknesses": [
+        "Trapped in a stabilized rift bubble"
+      ],
+      "taming": "Nine Shadows Syndicate lures it with Rift Shard bait.",
+      "image": "images/beasts/yongju/riftstalker-drake.jpg"
+    },
+    {
+      "id": "frostspire-wyvern",
+      "name": "Frostspire Wyvern",
+      "threatLevel": "B+",
+      "continentId": "yongju",
+      "type": "Ice/Dragon",
+      "description": "A wyvern encased in cursed ice from the Frostscourge Drake’s lair. Freezes victims into macabre statues.",
+      "strengths": [
+        "Ice clones distract attackers"
+      ],
+      "weaknesses": [
+        "Shatters if its frozen heart is struck with a hammer"
+      ],
+      "taming": "Tempest Clan uses storm magic to blast it with hail.",
+      "image": "images/beasts/yongju/frostspire-wyvern.jpg"
+    },
+    {
+      "id": "thunderclaw-roc",
+      "name": "Thunderclaw Roc",
+      "threatLevel": "B",
+      "continentId": "yongju",
+      "type": "Storm/Beast-Dragon",
+      "description": "A giant bird with lightning-coated talons. Nests atop Dragonbone Spires, preying on storm wyrms.",
+      "strengths": [
+        "Summons tornadoes",
+        "Electrifies feathers"
+      ],
+      "weaknesses": [
+        "Grounded by Umbra Clan’s shadow nets"
+      ],
+      "taming": "Cheonmugun cavalry joust it mid-air with insulated lances.",
+      "image": "images/beasts/yongju/thunderclaw-roc.jpg"
+    },
+    {
+      "id": "emberghost-naga",
+      "name": "Emberghost Naga",
+      "threatLevel": "C+",
+      "continentId": "yongju",
+      "type": "Spirit/Fire-Dragon",
+      "description": "Ethereal serpentine dragons haunting volcanic caves. Guard forgotten Dragonsteel vaults.",
+      "strengths": [
+        "Incorporeal",
+        "Melts weapons on contact"
+      ],
+      "weaknesses": [
+        "Bound to physical form by sprinkling Dragonblood"
+      ],
+      "taming": "Children offer charred poetry to appease them.",
+      "image": "images/beasts/yongju/emberghost-naga.jpg"
+    },
+    {
+      "id": "obsidian-gargoyle",
+      "name": "Obsidian Gargoyle",
+      "threatLevel": "C",
+      "continentId": "yongju",
+      "type": "Earth/Dragon",
+      "description": "Winged statues carved by Drakonids to protect temples. Animated by shards of the Infernal Sovereign’s heart.",
+      "strengths": [
+        "Camouflages as rubble",
+        "Fire breath"
+      ],
+      "weaknesses": [
+        "Command word etched on their tongues (known only to Yongin Sega)"
+      ],
+      "taming": "Recite the Oath of Stone in Draconic tongue.",
+      "image": "images/beasts/yongju/obsidian-gargoyle.jpg"
+    },
+    {
+      "id": "suncinder-manticore",
+      "name": "Suncinder Manticore",
+      "threatLevel": "D+",
+      "continentId": "yongju",
+      "type": "Solar/Dragon",
+      "description": "A lion-dragon hybrid with a mane of solar flares. Created by Ignis Clan to rival the Emberclaw Phoenix.",
+      "strengths": [
+        "Blinds foes",
+        "Ignites flammable gases"
+      ],
+      "weaknesses": [
+        "Power wanes at night"
+      ],
+      "taming": "Feed it Sun Empire flags soaked in magma.",
+      "image": "images/beasts/yongju/suncinder-manticore.jpg"
+    },
+    {
+      "id": "ashveil-spider",
+      "name": "Ashveil Spider",
+      "threatLevel": "D",
+      "continentId": "yongju",
+      "type": "Illusion/Dragon",
+      "description": "A spider-dragon that weaves ash into illusions of treasure or loved ones. Lures victims into lava pits.",
+      "strengths": [
+        "Hypnotic patterns on its abdomen"
+      ],
+      "weaknesses": [
+        "Illusions break if exposed to pure water"
+      ],
+      "taming": "Yonghon Jeok use prismatic lenses to distort its webs.",
+      "image": "images/beasts/yongju/ashveil-spider.jpg"
+    },
+    {
+      "id": "quakehorn-rhino",
+      "name": "Quakehorn Rhino",
+      "threatLevel": "E+",
+      "continentId": "yongju",
+      "type": "Earth/Dragon-Beast",
+      "description": "A rhino with a Dragonsteel horn. Stampedes through clans to “test their strength.”",
+      "strengths": [
+        "Seismic stomps",
+        "Charges through walls"
+      ],
+      "weaknesses": [
+        "Horn gets stuck in Dragonbone Spires"
+      ],
+      "taming": "Challenge it to a headbutt contest (requires SSS-tier stamina).",
+      "image": "images/beasts/yongju/quakehorn-rhino.jpg"
+    },
+    {
+      "id": "nightscale-siren",
+      "name": "Nightscale Siren",
+      "threatLevel": "E",
+      "continentId": "yongju",
+      "type": "Shadow/Dragon",
+      "description": "A humanoid dragon with a lyre made of its own ribs. Sings dirges that liquefy bones.",
+      "strengths": [
+        "Sound-based attacks",
+        "Charms mortals"
+      ],
+      "weaknesses": [
+        "Silenced by louder noise (e.g., Tempest Clan’s thunder drums)"
+      ],
+      "taming": "Myeongwol Bu bribes it with forbidden sheet music.",
+      "image": "images/beasts/yongju/nightscale-siren.jpg"
+    },
+    {
+      "id": "magmaflow-salamander",
+      "name": "Magmaflow Salamander",
+      "threatLevel": "F+",
+      "continentId": "yongju",
+      "type": "Fire/Dragon",
+      "description": "A small, fiery salamander that thrives in lava flows, its body radiating heat and light.",
+      "strengths": [
+        "Can swim through magma",
+        "Ignites flammable materials on contact"
+      ],
+      "weaknesses": [
+        "Vulnerable to water and extreme cold"
+      ],
+      "taming": "Offer it Firebloom Berries, which it finds irresistible.",
+      "image": "images/beasts/yongju/magmaflow-salamander.jpg"
+    },
+    {
+      "id": "dustwing-sparrow",
+      "name": "Dustwing Sparrow",
+      "threatLevel": "G-",
+      "continentId": "yongju",
+      "type": "Wind/Dragon",
+      "description": "A tiny dragon resembling a sparrow, with wings that create dust storms as it flits about.",
+      "strengths": [
+        "Harmless",
+        "Provides minor visibility in storms"
+      ],
+      "weaknesses": [
+        "Easily captured in nets or jars"
+      ],
+      "taming": "Children collect them in Storm Lanterns, using sweet nectar as bait.",
+      "image": "images/beasts/yongju/dustwing-sparrow.jpg"
+    },
+    {
+      "id": "tempest-leviathan",
+      "name": "Tempest Leviathan",
+      "threatLevel": "SSS+++",
+      "continentId": "haeguk",
+      "type": "Storm/Water Titan",
+      "description": "A fusion of hurricane and sea serpent, its body crackling with lightning and churning whirlpools. Haewang’s incarnate wrath.",
+      "strengths": [
+        "Generates mile-wide maelstroms",
+        "Redirects tidal waves"
+      ],
+      "weaknesses": [
+        "Calmed by Mirae’s Tear (a relic hidden in the Trench of Whispers)"
+      ],
+      "taming": "OmniSummoner must bind it during the 'Eye of the Storm' using a Typhoon Conch.",
+      "image": "images/beasts/haeguk/tempest-leviathan.jpg"
+    },
+    {
+      "id": "coral-warden",
+      "name": "Coral Warden",
+      "threatLevel": "SSS++",
+      "continentId": "haeguk",
+      "type": "Plant/Water Titan",
+      "description": "A sentient coral fortress housing symbiotic sea creatures. Its roots stretch across trenches, rebuilding reefs.",
+      "strengths": [
+        "Spawns venomous polyps",
+        "Immune to water magic"
+      ],
+      "weaknesses": [
+        "Core exposed during low tide"
+      ],
+      "taming": "Bada Hyeop druids perform Reef Communion rituals at dawn.",
+      "image": "images/beasts/haeguk/coral-warden.jpg"
+    },
+    {
+      "id": "drowned-king",
+      "name": "Drowned King",
+      "threatLevel": "SSS+",
+      "continentId": "haeguk",
+      "type": "Undead/Water Hybrid",
+      "description": "A skeletal warlord fused with barnacles and Haewang’s storm magic. Commands ghost ships from the Eternal Maelstrom.",
+      "strengths": [
+        "Summons spectral crews",
+        "Curses attackers with Bone Rot"
+      ],
+      "weaknesses": [
+        "Banished by sunlight reflected through the Pearl of the Depths"
+      ],
+      "taming": "Haejeok Yeoltan offer stolen souls to bargain for its fleet.",
+      "image": "images/beasts/haeguk/drowned-king.jpg"
+    },
+    {
+      "id": "luminescent-abyss",
+      "name": "Luminescent Abyss",
+      "threatLevel": "SSS",
+      "continentId": "haeguk",
+      "type": "Light/Water Titan",
+      "description": "A jellyfish-like entity with bioluminescent tendrils that drain light from the surrounding ocean. Guards the Pearl of Equilibrium.",
+      "strengths": [
+        "Blinds foes",
+        "Absorbs energy from light spells"
+      ],
+      "weaknesses": [
+        "Lured to the surface by Moonfire Lanterns"
+      ],
+      "taming": "Wolseong priests sacrifice their sight to commune with it.",
+      "image": "images/beasts/haeguk/luminescent-abyss.jpg"
+    },
+    {
+      "id": "riptide-wyrm",
+      "name": "Riptide Wyrm",
+      "threatLevel": "SS+",
+      "continentId": "haeguk",
+      "type": "Water/Shadow Hybrid",
+      "description": "A serpentine predator that swims through shadows in water, dragging victims into the Trench of Whispers.",
+      "strengths": [
+        "Phases between light and dark",
+        "Ignores armor"
+      ],
+      "weaknesses": [
+        "Trapped in Mirae’s Healing Currents"
+      ],
+      "taming": "Nine Shadows Syndicate binds it with chains forged from abyssal ore.",
+      "image": "images/beasts/haeguk/riptide-wyrm.jpg"
+    },
+    {
+      "id": "thunderclap-ray",
+      "name": "Thunderclap Ray",
+      "threatLevel": "SS",
+      "continentId": "haeguk",
+      "type": "Storm/Water Beast",
+      "description": "A manta ray with wings that crackle with thunder. Creates localized hurricanes to disorient prey.",
+      "strengths": [
+        "Electrifies water",
+        "Stuns with sonic booms"
+      ],
+      "weaknesses": [
+        "Grounded by coral spears"
+      ],
+      "taming": "Tempest Clan riders snare it with Storm Nets woven from kelp.",
+      "image": "images/beasts/haeguk/thunderclap-ray.jpg"
+    },
+    {
+      "id": "sirens-lament",
+      "name": "Siren’s Lament",
+      "threatLevel": "S+",
+      "continentId": "haeguk",
+      "type": "Spirit/Water",
+      "description": "The ghost of a Bada Hyeop captain who failed Mirae. Her wails summon tidal waves of grief, drowning entire crews.",
+      "strengths": [
+        "Emotional manipulation",
+        "Intangible form"
+      ],
+      "weaknesses": [
+        "Laid to rest by recovering her lost trident from the Maelstrom"
+      ],
+      "taming": "Only appeased by a Dirge of Atonement sung in Pelagian.",
+      "image": "images/beasts/haeguk/sirens-lament.jpg"
+    },
+    {
+      "id": "kelpfiend-hydra",
+      "name": "Kelpfiend Hydra",
+      "threatLevel": "S",
+      "continentId": "haeguk",
+      "type": "Plant/Water",
+      "description": "A hydra with kelp for heads, each spewing acidic brine. Grows stronger in polluted waters.",
+      "strengths": [
+        "Regrows heads unless burned",
+        "Corrodes metal"
+      ],
+      "weaknesses": [
+        "Weak to freshwater torrents"
+      ],
+      "taming": "Suryeon Bimu druids pacify it with Saltwater Psalms.",
+      "image": "images/beasts/haeguk/kelpfiend-hydra.jpg"
+    },
+    {
+      "id": "vortex-crab",
+      "name": "Vortex Crab",
+      "threatLevel": "A+",
+      "continentId": "haeguk",
+      "type": "Water/Earth",
+      "description": "A crab the size of a warship, its claws spin whirlpools to trap prey. Burrows under islands to destabilize them.",
+      "strengths": [
+        "Creates sinkholes",
+        "Shell deflects cannonfire"
+      ],
+      "weaknesses": [
+        "Flip it using Tidal Leverage (requires 10+ sailors)"
+      ],
+      "taming": "Haejeok Yeoltan use it to sabotage rival fleets.",
+      "image": "images/beasts/haeguk/vortex-crab.jpg"
+    },
+    {
+      "id": "bioluminescent-kraken",
+      "name": "Bioluminescent Kraken",
+      "threatLevel": "A",
+      "continentId": "haeguk",
+      "type": "Light/Water",
+      "description": "A smaller kraken that mimics coral reefs to ambush ships. Glows to hypnotize sailors into walking overboard.",
+      "strengths": [
+        "Hypnosis",
+        "Regenerates tentacles"
+      ],
+      "weaknesses": [
+        "Blinded by its own light if mirrored"
+      ],
+      "taming": "Bada Hyeop use Prismatic Shields to reflect its glow.",
+      "image": "images/beasts/haeguk/bioluminescent-kraken.jpg"
+    },
+    {
+      "id": "tidehunter-shark",
+      "name": "Tidehunter Shark",
+      "threatLevel": "B+",
+      "continentId": "haeguk",
+      "type": "Water/Metal",
+      "description": "A shark with Abyssal Ore teeth that cut through hulls. Hunts in packs during high tide.",
+      "strengths": [
+        "Armor-piercing bites",
+        "Detects blood miles away"
+      ],
+      "weaknesses": [
+        "Lured into shallow reefs"
+      ],
+      "taming": "Blacksmiths bait them with Rustmetal to harvest their teeth.",
+      "image": "images/beasts/haeguk/tidehunter-shark.jpg"
+    },
+    {
+      "id": "mangrove-colossus",
+      "name": "Mangrove Colossus",
+      "threatLevel": "B",
+      "continentId": "haeguk",
+      "type": "Plant/Water",
+      "description": "A walking mangrove tree with roots that strangle ships. Home to venomous snakes and wasps.",
+      "strengths": [
+        "Immune to blades",
+        "Controls vines"
+      ],
+      "weaknesses": [
+        "Burn its seedpod heart"
+      ],
+      "taming": "Untamable—entire islands avoid its migration paths.",
+      "image": "images/beasts/haeguk/mangrove-colossus.jpg"
+    },
+    {
+      "id": "seabed-wisp",
+      "name": "Seabed Wisp",
+      "threatLevel": "C+",
+      "continentId": "haeguk",
+      "type": "Spirit/Water",
+      "description": "Glowing orbs that lead sailors to treasure… or traps. Manifestations of Mirae’s curiosity.",
+      "strengths": [
+        "Illusions",
+        "Harmless unless provoked"
+      ],
+      "weaknesses": [
+        "Dispersed by Haewang’s storm winds"
+      ],
+      "taming": "Children coax them with seashell offerings.",
+      "image": "images/beasts/haeguk/seabed-wisp.jpg"
+    },
+    {
+      "id": "anemone-reaper",
+      "name": "Anemone Reaper",
+      "threatLevel": "C",
+      "continentId": "haeguk",
+      "type": "Poison/Water",
+      "description": "A humanoid crustacean with anemone tentacles. Paralyzes prey and dissolves them in acidic 'gardens.'",
+      "strengths": [
+        "Toxin-coated claws",
+        "Camouflages as coral"
+      ],
+      "weaknesses": [
+        "Anemones wilt without seawater"
+      ],
+      "taming": "Alchemists farm them for Neurotoxin Glands.",
+      "image": "images/beasts/haeguk/anemone-reaper.jpg"
+    },
+    {
+      "id": "saltspine-eel",
+      "name": "Saltspine Eel",
+      "threatLevel": "D+",
+      "continentId": "haeguk",
+      "type": "Water/Crystal",
+      "description": "An eel with razor-sharp salt crystals along its spine. Swims through hurricanes to shred ships.",
+      "strengths": [
+        "Cuts through wood/metal",
+        "Immune to storms"
+      ],
+      "weaknesses": [
+        "Crumbles if soaked in freshwater"
+      ],
+      "taming": "Haejeok Yeoltan grind its spines into Salt Blades.",
+      "image": "images/beasts/haeguk/saltspine-eel.jpg"
+    },
+    {
+      "id": "driftwood-phantom",
+      "name": "Driftwood Phantom",
+      "threatLevel": "D",
+      "continentId": "haeguk",
+      "type": "Undead/Water",
+      "description": "Possessed ship debris that assembles into a skeletal figure. Haunts shipwrecks for eternity.",
+      "strengths": [
+        "Reassembles when destroyed",
+        "Curses looters"
+      ],
+      "weaknesses": [
+        "Burned with Kraken Ink-coated torches"
+      ],
+      "taming": "Salvagers avoid wrecks marked with its symbol.",
+      "image": "images/beasts/haeguk/driftwood-phantom.jpg"
+    },
+    {
+      "id": "foamspray-dolphin",
+      "name": "Foamspray Dolphin",
+      "threatLevel": "E+",
+      "continentId": "haeguk",
+      "type": "Water/Air",
+      "description": "Dolphins that shoot pressurized water jets. Playful but capricious—sink ships for fun.",
+      "strengths": [
+        "Precision strikes",
+        "Outmaneuver cannons"
+      ],
+      "weaknesses": [
+        "Bribed with fish"
+      ],
+      "taming": "Fishermen trade Skyfin Tuna for safe passage.",
+      "image": "images/beasts/haeguk/foamspray-dolphin.jpg"
+    },
+    {
+      "id": "trenchling",
+      "name": "Trenchling",
+      "threatLevel": "E",
+      "continentId": "haeguk",
+      "type": "Water/Abyssal",
+      "description": "Eel-like parasites that swarm from trenches. Eat through hulls and flesh in seconds.",
+      "strengths": [
+        "Overwhelm numbers",
+        "Ignore armor"
+      ],
+      "weaknesses": [
+        "Repelled by Bioluminescent Jellyfish light"
+      ],
+      "taming": "Untamable—sailors fear them as 'Haewang’s Teeth.'",
+      "image": "images/beasts/haeguk/trenchling.jpg"
+    },
+    {
+      "id": "pearlscuttle-otter",
+      "name": "Pearlscuttle Otter",
+      "threatLevel": "F+",
+      "continentId": "haeguk",
+      "type": "Water/Light",
+      "description": "Otters that collect pearls and defend them with dazzling flashes. Non-lethal but territorial.",
+      "strengths": [
+        "Blinding light",
+        "Steals shiny objects"
+      ],
+      "weaknesses": [
+        "Distracted by Abyssal Ore trinkets"
+      ],
+      "taming": "Pearl divers trade baubles for safe harvesting.",
+      "image": "images/beasts/haeguk/pearlscuttle-otter.jpg"
+    },
+    {
+      "id": "tidepool-pixie",
+      "name": "Tidepool Pixie",
+      "threatLevel": "G-",
+      "continentId": "haeguk",
+      "type": "Water/Spirit",
+      "description": "Tiny winged spirits that dance in tidepools. Heal minor wounds but gossip to seagulls.",
+      "strengths": [
+        "Minor healing magic",
+        "Harmless"
+      ],
+      "weaknesses": [
+        "Disliked by serious sailors"
+      ],
+      "taming": "Children befriend them with seaweed bracelets.",
+      "image": "images/beasts/haeguk/tidepool-pixie.jpg"
+    },
+    {
+      "id": "singularity-drake",
+      "name": "Singularity Drake",
+      "threatLevel": "SSS+++",
+      "continentId": "pyeonji",
+      "type": "Gravity/Chaos Titan",
+      "description": "A dragon with obsidian scales that warp light, its wingspan bends spacetime. Born from the Void Nexus, it devours islands to fuel its mass.",
+      "strengths": ["Generates gravitational singularities", "Immune to non-rift attacks"],
+      "weaknesses": ["Collapses if lured into a Neutral Zone (zero-gravity area)"],
+      "taming": "OmniSummoner must outpace its event horizon using a Rift Skipper artifact.",
+      "image": "images/beasts/pyeonji/singularity-drake.jpg"
+    },
+    {
+      "id": "riftcrawler-colossus",
+      "name": "Riftcrawler Colossus",
+      "threatLevel": "SSS++",
+      "continentId": "pyeonji",
+      "type": "Chaos/Dimensional Hybrid",
+      "description": "A shifting amalgam of limbs, eyes, and wings from alternate realities. Oozes Void Essence, corrupting terrain into unstable rifts.",
+      "strengths": ["Adapts physiology to counter attacks", "Teleports unpredictably"],
+      "weaknesses": ["Banished by sealing its Anchor Rift with Starbinder tech"],
+      "taming": "Void Reavers inject it with Chaos Serum to force obedience (50% success).",
+      "image": "images/beasts/pyeonji/riftcrawler-colossus.jpg"
+    },
+    {
+      "id": "gravemaw-leviathan",
+      "name": "Gravemaw Leviathan",
+      "threatLevel": "SSS+",
+      "continentId": "pyeonji",
+      "type": "Gravity/Behemoth",
+      "description": "A serpentine beast that swims through floating islands, its maw a swirling black hole. Drains matter to grow.",
+      "strengths": ["Crushes foes with 100x gravity fields", "Ignores physical damage"],
+      "weaknesses": ["Distracted by Order Crystals (emits stabilizing frequencies)"],
+      "taming": "Starbinders trap it in a Gravity Cage powered by Rift Crystals.",
+      "image": "images/beasts/pyeonji/gravemaw-leviathan.jpg"
+    },
+    {
+      "id": "chaosforge-golem",
+      "name": "Chaosforge Golem",
+      "threatLevel": "SSS",
+      "continentId": "pyeonji",
+      "type": "Chaos/Metal Construct",
+      "description": "A self-assembling golem of debris, machinery, and rift energy. Its form shifts mid-combat to exploit weaknesses.",
+      "strengths": ["Random elemental attacks", "Repairs using nearby scrap"],
+      "weaknesses": ["Core exposed when hit with Magnetic Pulse Grenades"],
+      "taming": "Cheonmugun engineers implant Stabilizer Cores to control its mutations.",
+      "image": "images/beasts/pyeonji/chaosforge-golem.jpg"
+    },
+    {
+      "id": "phaseclaw-predator",
+      "name": "Phaseclaw Predator",
+      "threatLevel": "SS+",
+      "continentId": "pyeonji",
+      "type": "Chaos/Beast",
+      "description": "A panther-like creature that phases through dimensions mid-leap. Claws rend spatial fabric, leaving temporary rifts.",
+      "strengths": ["Intangibility", "Ambush via teleportation"],
+      "weaknesses": ["Trapped in Dimensional Snares (Wolhwa moonstone tech)"],
+      "taming": "Myeongwol Bu assassins bait it with Rift-Meal (meat soaked in Void Essence).",
+      "image": "images/beasts/pyeonji/phaseclaw-predator.jpg"
+    },
+    {
+      "id": "glitch-hydra",
+      "name": "Glitch Hydra",
+      "threatLevel": "SS",
+      "continentId": "pyeonji",
+      "type": "Chaos/Spirit",
+      "description": "A three-headed serpent with pixelated scales. Each head exists in a different dimension, attacking from unpredictable angles.",
+      "strengths": ["Multi-dimensional strikes", "Regenerates heads via rift energy"],
+      "weaknesses": ["All heads must be severed simultaneously with Void Swords"],
+      "taming": "Guryong Yumin shamans perform a Rift Unweaving ritual.",
+      "image": "images/beasts/pyeonji/glitch-hydra.jpg"
+    },
+    {
+      "id": "vortex-reaper",
+      "name": "Vortex Reaper",
+      "threatLevel": "S+",
+      "continentId": "pyeonji",
+      "type": "Gravity/Insect",
+      "description": "A locust swarm that creates micro-black holes. Devours crops, structures, and unlucky victims in seconds.",
+      "strengths": ["Overwhelming numbers", "Terrain destruction"],
+      "weaknesses": ["Repelled by Sonic Dissonance Fields (Bungu tech)"],
+      "taming": "Untamable—farmers use Chaos Iron barriers to protect settlements.",
+      "image": "images/beasts/pyeonji/vortex-reaper.jpg"
+    },
+    {
+      "id": "fracturefiend",
+      "name": "Fracturefiend",
+      "threatLevel": "S",
+      "continentId": "pyeonji",
+      "type": "Chaos/Crystal",
+      "description": "A crystalline scorpion with shard-coated claws. Splits into smaller clones when struck.",
+      "strengths": ["Self-replication", "Armor-piercing strikes"],
+      "weaknesses": ["Shatters if frozen then heated rapidly"],
+      "taming": "Suryeon Bimu druids pacify it with Harmonic Chimes.",
+      "image": "images/beasts/pyeonji/fracturefiend.jpg"
+    },
+    {
+      "id": "warpstalker-hound",
+      "name": "Warpstalker Hound",
+      "threatLevel": "A+",
+      "continentId": "pyeonji",
+      "type": "Chaos/Beast",
+      "description": "Canine mutants with distorted limbs. Bites teleport chunks of flesh into rifts, leaving gaping wounds.",
+      "strengths": ["Unpredictable attack patterns", "Pack coordination"],
+      "weaknesses": ["Stasis Collars block their rift energy"],
+      "taming": "Void Reavers tame packs using Rift-Gorged Meat.",
+      "image": "images/beasts/pyeonji/warpstalker-hound.jpg"
+    },
+    {
+      "id": "quantum-wisp",
+      "name": "Quantum Wisp",
+      "threatLevel": "A",
+      "continentId": "pyeonji",
+      "type": "Chaos/Spirit",
+      "description": "Sentient orbs of fractured light that exist in multiple places at once. Confuse and disorient with quantum echoes.",
+      "strengths": ["Illusions", "Spatial duplication"],
+      "weaknesses": ["Collapses if all copies are destroyed within 3 seconds"],
+      "taming": "Guryong Yumin use Prismatic Lenses to capture one.",
+      "image": "images/beasts/pyeonji/quantum-wisp.jpg"
+    },
+    {
+      "id": "gravspine-crab",
+      "name": "Gravspine Crab",
+      "threatLevel": "B+",
+      "continentId": "pyeonji",
+      "type": "Gravity/Crustacean",
+      "description": "Crabs with shells that amplify gravity. Crushes prey under 10x weight, then feasts on the pulp.",
+      "strengths": ["Defensive aura", "Slow but unstoppable"],
+      "weaknesses": ["Flip it onto its back to disrupt its gravity field"],
+      "taming": "Salvagers use Anti-Grav Pulses to immobilize.",
+      "image": "images/beasts/pyeonji/gravspine-crab.jpg"
+    },
+    {
+      "id": "echo-specter",
+      "name": "Echo Specter",
+      "threatLevel": "B",
+      "continentId": "pyeonji",
+      "type": "Chaos/Undead",
+      "description": "A ghostly remnant of those lost to rifts. Replays their final moments as lethal holograms.",
+      "strengths": ["Illusory clones", "Fear inducement"],
+      "weaknesses": ["Laid to rest by completing their 'unfinished business'"],
+      "taming": "Resolve their personal rift-related tragedy.",
+      "image": "images/beasts/pyeonji/echo-specter.jpg"
+    },
+    {
+      "id": "riftmite-swarm",
+      "name": "Riftmite Swarm",
+      "threatLevel": "C+",
+      "continentId": "pyeonji",
+      "type": "Chaos/Insect",
+      "description": "Beetle-like pests that chew through Chaos Iron and spread rift corruption.",
+      "strengths": ["Destroys gear", "Infests settlements"],
+      "weaknesses": ["Exterminated by Orderfire (Hyeolbang alchemy)"],
+      "taming": "Untamable—Starbinders purge them aggressively.",
+      "image": "images/beasts/pyeonji/riftmite-swarm.jpg"
+    },
+    {
+      "id": "shardwing-moth",
+      "name": "Shardwing Moth",
+      "threatLevel": "C",
+      "continentId": "pyeonji",
+      "type": "Chaos/Air",
+      "description": "Moths with glass-like wings that explode into razor shards when threatened.",
+      "strengths": ["Suicide bombers", "Aerial agility"],
+      "weaknesses": ["Grounded by Liquid Adhesive (Cheolgeom tech)"],
+      "taming": "Collectors risk injury to harvest their glittering wings.",
+      "image": "images/beasts/pyeonji/shardwing-moth.jpg"
+    },
+    {
+      "id": "flux-serpent",
+      "name": "Flux Serpent",
+      "threatLevel": "D+",
+      "continentId": "pyeonji",
+      "type": "Chaos/Reptile",
+      "description": "A snake that flickers in/out of reality. Steals small objects and hoards them in rifts.",
+      "strengths": ["Teleportation", "Petty theft"],
+      "weaknesses": ["Trapped via Teleportation Glyph traps"],
+      "taming": "Thieves use them to smuggle goods.",
+      "image": "images/beasts/pyeonji/flux-serpent.jpg"
+    },
+    {
+      "id": "glitch-sprite",
+      "name": "Glitch Sprite",
+      "threatLevel": "D",
+      "continentId": "pyeonji",
+      "type": "Chaos/Spirit",
+      "description": "Tiny gremlins that short-circuit machinery and warp holograms.",
+      "strengths": ["Sabotage", "Harmless pranks"],
+      "weaknesses": ["Contained in Faraday Cages"],
+      "taming": "Engineers use them as chaotic 'debuggers.'",
+      "image": "images/beasts/pyeonji/glitch-sprite.jpg"
+    },
+    {
+      "id": "voidpup",
+      "name": "Voidpup",
+      "threatLevel": "E+",
+      "continentId": "pyeonji",
+      "type": "Chaos/Beast",
+      "description": "Dog-sized rift mutants with unstable bodies. Loyal if raised from 'eggs' (rift orbs).",
+      "strengths": ["Teleport short distances", "Adorable"],
+      "weaknesses": ["Unpredictable mutations during growth"],
+      "taming": "Feed Stabilized Void Essence to imprint.",
+      "image": "images/beasts/pyeonji/voidpup.jpg"
+    },
+    {
+      "id": "flickerfin",
+      "name": "Flickerfin",
+      "threatLevel": "E",
+      "continentId": "pyeonji",
+      "type": "Chaos/Water",
+      "description": "Fish that teleport between water droplets. Delicacy in Pyeonji, but hard to catch.",
+      "strengths": ["Evasion", "Delicious meat"],
+      "weaknesses": ["Caught in Steam Nets (vaporizes their escape routes)"],
+      "taming": "Chefs pay fortunes for fresh specimens.",
+      "image": "images/beasts/pyeonji/flickerfin.jpg"
+    },
+    {
+      "id": "dustmite-drone",
+      "name": "Dustmite Drone",
+      "threatLevel": "F+",
+      "continentId": "pyeonji",
+      "type": "Chaos/Insect",
+      "description": "Tiny mites that feed on rift dust. Indicators of unstable zones.",
+      "strengths": ["Early rift warnings", "Harmless"],
+      "weaknesses": ["Crushed by a breeze"],
+      "taming": "Collected in Vial Traps for study.",
+      "image": "images/beasts/pyeonji/dustmite-drone.jpg"
+    },
+    {
+      "id": "pixelpuff",
+      "name": "Pixelpuff",
+      "threatLevel": "G-",
+      "continentId": "pyeonji",
+      "type": "Chaos/Spirit",
+      "description": "A harmless, pixelated fluffball that glitches cutely. Popular with children.",
+      "strengths": ["Companionship", "Minor light source"],
+      "weaknesses": ["Disrupted by loud noises"],
+      "taming": "Kids lure them with Glowberries.",
+      "image": "images/beasts/pyeonji/pixelpuff.jpg"
+    }
+  ]
+}
