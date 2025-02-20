@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Audio configuration
     const FADE_DURATION = 500; // 2 seconds
-    const PLAY_DURATION = 60000; // 60 seconds total
+    const PLAY_DURATION = 220000; // 3 minutes and 40 seconds
     const MAX_VOLUME = 0.3; // 30% volume
 
     let currentAudio = null;
