@@ -1,0 +1,257 @@
+{
+    "gods": [
+      {
+        "name": "Jeokhwa",
+        "title": "Inferno's Heart",
+        "domain": "Fire, War, Volcanic Creation",
+        "image": "images/jeokhwa.jpg",
+        "stats": {
+          "power": "SSS+++",
+          "influence": "Volcanic Realms",
+          "followers": "12.7M"
+        },
+        "strengths": [
+          "Unlimited pyrokinesis",
+          "Lava manipulation",
+          "Weapon forging"
+        ],
+        "weaknesses": [
+          "Water deities",
+          "Lunar magic",
+          "Pacifist ideologies"
+        ],
+        "cultivationTechnique": "Infernal Crucible Meditation",
+        "lore": "Primordial embodiment of celestial fire whose breath ignites eternal wildfires. Forged the first volcanoes by plunging his spear into the world's crust. His Eternal Pyre burns at Hwayang's core, consuming sacrifices and powering his divine wrath."
+      },
+      {
+        "name": "Seolhyang",
+        "title": "Moon's Weeper",
+        "domain": "Moonlight, Healing, Illusion",
+        "image": "images/seolhyang.jpg",
+        "stats": {
+          "power": "SS+",
+          "influence": "Night Realms",
+          "followers": "9.3M"
+        },
+        "strengths": [
+          "Reality warping",
+          "Lunar healing",
+          "Celestial navigation"
+        ],
+        "weaknesses": [
+          "Solar magic",
+          "Shadow corruption",
+          "Broken promises"
+        ],
+        "cultivationTechnique": "Astralspindle Weaving",
+        "lore": "Weaver of cosmic threads who illuminates Wolhwa's eternal twilight. Her tears form moonstone lakes with healing properties. Maintains the Lunar Veil protecting mortals from void predators, though her grief over lost love fuels dangerous illusions."
+      },
+      {
+        "name": "Cheolmun",
+        "title": "Forge's Song",
+        "domain": "Metal, Craftsmanship, Order",
+        "image": "images/cheolmun.jpg",
+        "stats": {
+          "power": "SSS+",
+          "influence": "Forged Realms",
+          "followers": "8.2M"
+        },
+        "strengths": [
+          "Sky-ore creation",
+          "Gravitational forging",
+          "Weapon enchantment"
+        ],
+        "weaknesses": [
+          "Chaos magic",
+          "Moral compromise",
+          "Rust corruption"
+        ],
+        "cultivationTechnique": "Harmonic Resonance Tempering",
+        "lore": "Cosmic blacksmith whose hammer strikes shaped Cheolgeom's iron plains. His Song of Steel commands metal at molecular levels. Judges mortal smiths through ghostly visitations, rewarding purity of craft with divine blueprints."
+      },
+      {
+        "name": "Mokhwa",
+        "title": "Life Dancer",
+        "domain": "Nature, Bioluminescence, Renewal",
+        "image": "images/mokhwa.jpg",
+        "stats": {
+          "power": "SS",
+          "influence": "Verdant Realms",
+          "followers": "14.5M"
+        },
+        "strengths": [
+          "Instant flora growth",
+          "Poison immunity",
+          "Animal communion"
+        ],
+        "weaknesses": [
+          "Industrial blight",
+          "Unnatural decay",
+          "Soul corruption"
+        ],
+        "cultivationTechnique": "World Tree Symbiosis",
+        "lore": "Androgynous entity whose dance creates and destroys ecosystems. Their footsteps sprout ancient forests while sorrow births toxic fungi. Wanders as a druid, testing mortals with seeds that bloom into virtues or vices."
+      },
+      {
+        "name": "Bingwu",
+        "title": "Frostbringer",
+        "domain": "Ice, Prophecy, Eternal Winter",
+        "image": "images/bingwu.jpg",
+        "stats": {
+          "power": "SS+",
+          "influence": "Glacial Realms",
+          "followers": "6.8M"
+        },
+        "strengths": [
+          "Time freezing",
+          "Fate reading",
+          "Permafrost creation"
+        ],
+        "weaknesses": [
+          "Heat sources",
+          "Uncertainty",
+          "Emotional warmth"
+        ],
+        "cultivationTechnique": "Ice Mirror Scrying",
+        "lore": "Oracle of frozen truths who preserves history in glacial archives. His third eye sees temporal branches, but Voidfrost Wyrms devour his visions. Final prophecy warns of the Thaw that will drown or rebirth Cheonhae."
+      },
+      {
+        "name": "Guryong",
+        "title": "Shadow's Jester",
+        "domain": "Chaos, Curses, Dark Alchemy",
+        "image": "images/guryong.jpg",
+        "stats": {
+          "power": "SSS",
+          "influence": "Twisted Realms",
+          "followers": "3.1M"
+        },
+        "strengths": [
+          "Reality warping",
+          "Soul splicing",
+          "Hex amplification"
+        ],
+        "weaknesses": [
+          "Pure intentions",
+          "Order magic",
+          "Self-awareness"
+        ],
+        "cultivationTechnique": "Obelisk Corruption Ritual",
+        "lore": "Cosmic parasite stitched from dead gods' remains. His Black Obelisk bleeds cursed ink that corrupts reality. Manipulates cults and kings through sentient shadows, seeking to reassemble his true form from divine fragments."
+      },
+      {
+        "name": "Zephyros & Aeris",
+        "title": "Stormfather & Skymother",
+        "domain": "Storms, Sky, Order",
+        "image": "images/stormfather_skymother.jpg",
+        "stats": {
+          "power": "SS+",
+          "influence": "Celestial Realms",
+          "followers": "7.9M"
+        },
+        "strengths": [
+          "Weather control",
+          "Gravity manipulation",
+          "Aerial navigation"
+        ],
+        "weaknesses": [
+          "Grounding forces",
+          "Emotional discord",
+          "Silence"
+        ],
+        "cultivationTechnique": "Tempest Harmony Chanting",
+        "lore": "Divine couple whose love-hate relationship powers Bungu's floating islands. Zephyros' rage creates hurricanes while Aeris' Skyheart Gem prevents atmospheric collapse. Their missing son's return could either stabilize or destroy the skies."
+      },
+      {
+        "name": "Nonghwa",
+        "title": "Harvest Matron",
+        "domain": "Agriculture, Fertility, Earth's Bounty",
+        "image": "images/nonghwa.jpg",
+        "stats": {
+          "power": "S+",
+          "influence": "Verdant Realms",
+          "followers": "22.4M"
+        },
+        "strengths": [
+          "Crop multiplication",
+          "Soil rejuvenation",
+          "Drought prevention"
+        ],
+        "weaknesses": [
+          "Famine",
+          "Greed",
+          "Chemical corruption"
+        ],
+        "cultivationTechnique": "Golden Grain Communion",
+        "lore": "Earth mother whose heartbeat synchronizes with harvest cycles. Her Worldseed lies buried deep, capable of regrowing Cheonhae after apocalypse. Tests mortals through Terrahoof Boars that either bless farms or trample greed."
+      },
+      {
+        "name": "Yongwang",
+        "title": "Scaled Sovereign",
+        "domain": "Dragons, Volcanic Might, Draconic Hierarchy",
+        "image": "images/yongwang.jpg",
+        "stats": {
+          "power": "SSS+",
+          "influence": "Draconic Realms",
+          "followers": "5.6M"
+        },
+        "strengths": [
+          "Dragon command",
+          "Magma control",
+          "Tectonic manipulation"
+        ],
+        "weaknesses": [
+          "Kin betrayal",
+          "Altitude sickness",
+          "Moral complexity"
+        ],
+        "cultivationTechnique": "Scale Fusion Ascension",
+        "lore": "Dragon god enthroned on his son's bones. His shed scales birth Inferno Wyrms that ravage continents. Slumbers beneath the Ashen Spine, his roars triggering eruptions when Chaoswyrms challenge his supremacy."
+      },
+      {
+        "name": "Haewang & Mirae",
+        "title": "Storm Tyrant & Tide Mother",
+        "domain": "Ocean's Wrath, Tides, Healing",
+        "image": "images/storm_tyrant_tide_mother.jpg",
+        "stats": {
+          "power": "SS",
+          "influence": "Marine Realms",
+          "followers": "11.3M"
+        },
+        "strengths": [
+          "Tsunami creation",
+          "Tidal healing",
+          "Marine life control"
+        ],
+        "weaknesses": [
+          "Land magic",
+          "Emotional distance",
+          "Freshwater dilution"
+        ],
+        "cultivationTechnique": "Abyssal Pressure Cycling",
+        "lore": "Divine couple governing Haeguk's opposing seas. Haewang's trident churns killer whirlpools while Mirae's Pearl of Equilibrium calms waters. Their missing Tideprince's return could either unify oceans or drown continents."
+      },
+      {
+        "name": "Yongma",
+        "title": "Shattered Star",
+        "domain": "Chaos, Gravity, Cosmic Fragmentation",
+        "image": "images/yongma.jpg",
+        "stats": {
+          "power": "SSS++",
+          "influence": "Fractured Realms",
+          "followers": "1.8M"
+        },
+        "strengths": [
+          "Reality fracturing",
+          "Gravity wells",
+          "Antimatter creation"
+        ],
+        "weaknesses": [
+          "Stabilization magic",
+          "Self-cohesion",
+          "Temporal anchors"
+        ],
+        "cultivationTechnique": "Void Nexus Channeling",
+        "lore": "Mad god-carcass warping Pyeonji's reality. His death scream birthed floating islands and gravity storms. Cultists seek his Antimatter Heart to 'cleanse' Cheonhae through total annihilation, unaware it would unmake existence itself."
+      }
+    ]
+  }

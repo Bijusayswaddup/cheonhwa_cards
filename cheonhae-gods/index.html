@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Pantheon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="divine-header">
+        <h1>Chronicles of the Celestial Throne</h1>
+        <p>Witness the Divine Architects of Creation</p>
+    </header>
+
+    <main class="pantheon-container" id="gods-container">
+        <!-- Dynamic cards will be inserted here -->
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="celestialModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-grid">
+                <!-- Left Image Column -->
+                <div class="modal-image-column">
+                    <img id="modalImage" class="divine-portrait" alt="Celestial Visage">
+                </div>
+                
+                <!-- Right Info Column -->
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <h3 id="modalDomain"></h3>
+                    
+                    <div class="divine-stats">
+                        <div class="stat-card">
+                            <span class="stat-label">Power Level</span>
+                            <span class="stat-value" id="statPower"></span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Influence</span>
+                            <span class="stat-value" id="statInfluence"></span>
+                        </div>
+                    </div>
+
+                    <div class="attributes-container">
+                        <div class="strengths-section">
+                            <h4>Divine Strengths</h4>
+                            <ul id="strengthsList"></ul>
+                        </div>
+                        <div class="weaknesses-section">
+                            <h4>Mortal Weaknesses</h4>
+                            <ul id="weaknessesList"></ul>
+                        </div>
+                    </div>
+
+                    <div class="lore-container">
+                        <h4>Ancient Lore</h4>
+                        <p id="loreContent"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

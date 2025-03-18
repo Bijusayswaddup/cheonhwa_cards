@@ -31,7 +31,7 @@ function initSlider() {
     });
 
     // Start auto-slide
-    autoSlideInterval = setInterval(nextSlide, 5000);
+    autoSlideInterval = setInterval(nextSlide, 15000);
     
     // Add event listeners
     slider.addEventListener('touchstart', touchStart);
